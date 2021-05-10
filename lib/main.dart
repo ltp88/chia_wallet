@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:ffi'; // For FFI
-import 'dart:io'; // For Platform.isX
-
+import 'package:chia_wallet/bls.dart';
 
 void main() {
   runApp(MyApp());
@@ -50,6 +48,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  List<int> _data = [];
 
   void _incrementCounter() {
     setState(() {
@@ -58,6 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
+      Bls bls = new Bls();
+      _data = bls.privateKey;
+
       _counter++;
     });
   }
@@ -97,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              '$_data',
             ),
             Text(
               '$_counter',
