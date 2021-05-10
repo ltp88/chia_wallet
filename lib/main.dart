@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'dart:ffi'; // For FFI
+import 'dart:io'; // For Platform.isX
+
 
 void main() {
   runApp(MyApp());

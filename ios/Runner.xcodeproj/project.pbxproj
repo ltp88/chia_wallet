@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,271 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		AA396359264916990096D86A /* relic_ed_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39626C2649168B0096D86A /* relic_ed_neg.c */; };
+		AA39635A264916990096D86A /* relic_ep_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39626D2649168B0096D86A /* relic_ep_mul.c */; };
+		AA39635B264916990096D86A /* relic_dv_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39626E2649168B0096D86A /* relic_dv_util.c */; };
+		AA39635C264916990096D86A /* relic_bn_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39626F2649168B0096D86A /* relic_bn_prime.c */; };
+		AA39635D264916990096D86A /* relic_rand_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962702649168B0096D86A /* relic_rand_core.c */; };
+		AA39635E264916990096D86A /* relic_ep2_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962712649168B0096D86A /* relic_ep2_util.c */; };
+		AA39635F264916990096D86A /* relic_bn_mod_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962722649168B0096D86A /* relic_bn_mod_low.c */; };
+		AA396360264916990096D86A /* relic_cp_bgn.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962732649168C0096D86A /* relic_cp_bgn.c */; };
+		AA396361264916990096D86A /* relic_eb_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962742649168C0096D86A /* relic_eb_param.c */; };
+		AA396362264916990096D86A /* relic_pp_dbl_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962752649168C0096D86A /* relic_pp_dbl_k54.c */; };
+		AA396363264916990096D86A /* relic_fp_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962762649168C0096D86A /* relic_fp_rdc.c */; };
+		AA396364264916990096D86A /* relic_fb_srt_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962772649168C0096D86A /* relic_fb_srt_low.c */; };
+		AA396365264916990096D86A /* relic_fb_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962782649168C0096D86A /* relic_fb_cmp.c */; };
+		AA396366264916990096D86A /* relic_cp_ibe.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962792649168C0096D86A /* relic_cp_ibe.c */; };
+		AA396367264916990096D86A /* relic_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627A2649168C0096D86A /* relic_core.c */; };
+		AA396368264916990096D86A /* relic_fp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627B2649168C0096D86A /* relic_fp_util.c */; };
+		AA396369264916990096D86A /* relic_fpx_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627C2649168C0096D86A /* relic_fpx_util.c */; };
+		AA39636A264916990096D86A /* relic_fp12_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627D2649168C0096D86A /* relic_fp12_sqr.c */; };
+		AA39636B264916990096D86A /* relic_fb_itr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627E2649168C0096D86A /* relic_fb_itr_low.c */; };
+		AA39636C264916990096D86A /* relic_pp_map_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39627F2649168C0096D86A /* relic_pp_map_k48.c */; };
+		AA39636D264916990096D86A /* relic_eb_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962802649168C0096D86A /* relic_eb_pck.c */; };
+		AA39636E264916990096D86A /* relic_bn_smb.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962812649168C0096D86A /* relic_bn_smb.c */; };
+		AA39636F264916990096D86A /* relic_fb_trc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962822649168C0096D86A /* relic_fb_trc_low.c */; };
+		AA396370264916990096D86A /* relic_eb_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962832649168C0096D86A /* relic_eb_dbl.c */; };
+		AA396371264916990096D86A /* relic_fp4_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962842649168D0096D86A /* relic_fp4_sqr.c */; };
+		AA396372264916990096D86A /* relic_fp8_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962852649168D0096D86A /* relic_fp8_sqr.c */; };
+		AA396373264916990096D86A /* relic_fb_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962862649168D0096D86A /* relic_fb_poly.c */; };
+		AA396374264916990096D86A /* relic_fb_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962872649168D0096D86A /* relic_fb_sqr_low.c */; };
+		AA396375264916990096D86A /* relic_fp_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962882649168D0096D86A /* relic_fp_mul_low.c */; };
+		AA396376264916990096D86A /* relic_fp9_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962892649168D0096D86A /* relic_fp9_sqr.c */; };
+		AA396377264916990096D86A /* relic_pp_dbl_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628A2649168D0096D86A /* relic_pp_dbl_k2.c */; };
+		AA396378264916990096D86A /* relic_fp_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628B2649168D0096D86A /* relic_fp_param.c */; };
+		AA396379264916990096D86A /* relic_eb_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628C2649168D0096D86A /* relic_eb_map.c */; };
+		AA39637A264916990096D86A /* relic_md_sha224.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628D2649168D0096D86A /* relic_md_sha224.c */; };
+		AA39637B264916990096D86A /* relic_pp_exp_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628E2649168D0096D86A /* relic_pp_exp_k2.c */; };
+		AA39637C264916990096D86A /* relic_fpx_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39628F2649168D0096D86A /* relic_fpx_cmp.c */; };
+		AA39637D264916990096D86A /* relic_fb_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962902649168D0096D86A /* relic_fb_mul_low.c */; };
+		AA39637E264916990096D86A /* relic_fpx_cyc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962912649168D0096D86A /* relic_fpx_cyc.c */; };
+		AA39637F264916990096D86A /* relic_fp3_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962922649168E0096D86A /* relic_fp3_sqr.c */; };
+		AA396380264916990096D86A /* relic_bc_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962932649168E0096D86A /* relic_bc_aes.c */; };
+		AA396381264916990096D86A /* relic_fb2_slv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962942649168E0096D86A /* relic_fb2_slv.c */; };
+		AA396382264916990096D86A /* relic_eb_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962952649168E0096D86A /* relic_eb_frb.c */; };
+		AA396383264916990096D86A /* relic_md_mgf.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962962649168E0096D86A /* relic_md_mgf.c */; };
+		AA396384264916990096D86A /* relic_ed_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962972649168E0096D86A /* relic_ed_add.c */; };
+		AA396385264916990096D86A /* relic_ep2_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962982649168E0096D86A /* relic_ep2_neg.c */; };
+		AA396386264916990096D86A /* relic_pp_add_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962992649168E0096D86A /* relic_pp_add_k54.c */; };
+		AA396387264916990096D86A /* relic_fb2_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629A2649168E0096D86A /* relic_fb2_inv.c */; };
+		AA396388264916990096D86A /* relic_fp_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629B2649168E0096D86A /* relic_fp_prime.c */; };
+		AA396389264916990096D86A /* relic_bn_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629C2649168E0096D86A /* relic_bn_mul.c */; };
+		AA39638A264916990096D86A /* relic_pp_dbl_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629D2649168E0096D86A /* relic_pp_dbl_k12.c */; };
+		AA39638B2649169A0096D86A /* relic_pp_add_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629E2649168E0096D86A /* relic_pp_add_k8.c */; };
+		AA39638C2649169A0096D86A /* relic_ed_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39629F2649168F0096D86A /* relic_ed_param.c */; };
+		AA39638D2649169A0096D86A /* relic_cp_mpss.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A02649168F0096D86A /* relic_cp_mpss.c */; };
+		AA39638E2649169A0096D86A /* relic_pp_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A12649168F0096D86A /* relic_pp_norm.c */; };
+		AA39638F2649169A0096D86A /* relic_fp8_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A22649168F0096D86A /* relic_fp8_mul.c */; };
+		AA3963902649169A0096D86A /* sha224-256.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A32649168F0096D86A /* sha224-256.c */; };
+		AA3963912649169A0096D86A /* relic_bn_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A42649168F0096D86A /* relic_bn_util.c */; };
+		AA3963922649169A0096D86A /* relic_cp_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A52649168F0096D86A /* relic_cp_rsa.c */; };
+		AA3963932649169A0096D86A /* relic_eb_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A62649168F0096D86A /* relic_eb_neg.c */; };
+		AA3963942649169A0096D86A /* relic_fb_trc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A72649168F0096D86A /* relic_fb_trc.c */; };
+		AA3963952649169A0096D86A /* relic_dv_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A82649168F0096D86A /* relic_dv_mem.c */; };
+		AA3963962649169A0096D86A /* relic_fp18_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962A92649168F0096D86A /* relic_fp18_mul.c */; };
+		AA3963972649169A0096D86A /* relic_eb_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AA2649168F0096D86A /* relic_eb_mul_sim.c */; };
+		AA3963982649169A0096D86A /* relic_cp_zss.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AB2649168F0096D86A /* relic_cp_zss.c */; };
+		AA3963992649169A0096D86A /* relic_fpx_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AC2649168F0096D86A /* relic_fpx_exp.c */; };
+		AA39639A2649169A0096D86A /* relic_bn_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AD2649168F0096D86A /* relic_bn_sqr.c */; };
+		AA39639B2649169A0096D86A /* relic_ep2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AE2649168F0096D86A /* relic_ep2_dbl.c */; };
+		AA39639C2649169A0096D86A /* relic_eb_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962AF2649168F0096D86A /* relic_eb_norm.c */; };
+		AA39639D2649169A0096D86A /* relic_ep2_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B02649168F0096D86A /* relic_ep2_mul_sim.c */; };
+		AA39639E2649169A0096D86A /* relic_pp_map_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B12649168F0096D86A /* relic_pp_map_k2.c */; };
+		AA39639F2649169A0096D86A /* relic_fp12_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B22649168F0096D86A /* relic_fp12_mul.c */; };
+		AA3963A02649169A0096D86A /* relic_pp_add_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B3264916900096D86A /* relic_pp_add_k2.c */; };
+		AA3963A12649169A0096D86A /* relic_ep2_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B4264916900096D86A /* relic_ep2_curve.c */; };
+		AA3963A22649169A0096D86A /* relic_bn_lcm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B5264916900096D86A /* relic_bn_lcm.c */; };
+		AA3963A32649169A0096D86A /* relic_pp_exp_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B6264916900096D86A /* relic_pp_exp_k54.c */; };
+		AA3963A42649169A0096D86A /* relic_pp_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B7264916900096D86A /* relic_pp_map.c */; };
+		AA3963A52649169A0096D86A /* relic_fb_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B8264916900096D86A /* relic_fb_mul.c */; };
+		AA3963A62649169A0096D86A /* relic_bn_div.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962B9264916900096D86A /* relic_bn_div.c */; };
+		AA3963A72649169A0096D86A /* relic_eb_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BA264916900096D86A /* relic_eb_cmp.c */; };
+		AA3963A82649169A0096D86A /* relic_fb_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BB264916900096D86A /* relic_fb_rdc.c */; };
+		AA3963A92649169A0096D86A /* relic_cp_pss.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BC264916900096D86A /* relic_cp_pss.c */; };
+		AA3963AA2649169A0096D86A /* relic_md_xmd.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BD264916900096D86A /* relic_md_xmd.c */; };
+		AA3963AB2649169A0096D86A /* relic_ep2_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BE264916900096D86A /* relic_ep2_map.c */; };
+		AA3963AC2649169A0096D86A /* relic_cp_ecies.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962BF264916900096D86A /* relic_cp_ecies.c */; };
+		AA3963AD2649169A0096D86A /* relic_fp54_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C0264916900096D86A /* relic_fp54_sqr.c */; };
+		AA3963AE2649169A0096D86A /* relic_err.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C1264916900096D86A /* relic_err.c */; };
+		AA3963AF2649169A0096D86A /* relic_pp_add_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C2264916900096D86A /* relic_pp_add_k48.c */; };
+		AA3963B02649169A0096D86A /* relic_cp_ecdh.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C3264916900096D86A /* relic_cp_ecdh.c */; };
+		AA3963B12649169A0096D86A /* relic_fb_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C4264916900096D86A /* relic_fb_rdc_low.c */; };
+		AA3963B22649169A0096D86A /* relic_fb_slv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C5264916900096D86A /* relic_fb_slv.c */; };
+		AA3963B32649169A0096D86A /* relic_bn_mxp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C6264916900096D86A /* relic_bn_mxp.c */; };
+		AA3963B42649169A0096D86A /* relic_fp_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C7264916910096D86A /* relic_fp_exp.c */; };
+		AA3963B52649169A0096D86A /* relic_fp_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C8264916910096D86A /* relic_fp_srt.c */; };
+		AA3963B62649169A0096D86A /* relic_fp3_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962C9264916910096D86A /* relic_fp3_mul.c */; };
+		AA3963B72649169A0096D86A /* relic_cp_bdpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CA264916910096D86A /* relic_cp_bdpe.c */; };
+		AA3963B82649169A0096D86A /* blake2s-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CB264916910096D86A /* blake2s-ref.c */; };
+		AA3963B92649169A0096D86A /* relic_fpx_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CC264916910096D86A /* relic_fpx_rdc_low.c */; };
+		AA3963BA2649169A0096D86A /* relic_bn_div_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CD264916910096D86A /* relic_bn_div_low.c */; };
+		AA3963BB2649169A0096D86A /* relic_cp_ghpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CE264916910096D86A /* relic_cp_ghpe.c */; };
+		AA3963BC2649169A0096D86A /* relic_fb_slv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962CF264916910096D86A /* relic_fb_slv_low.c */; };
+		AA3963BD2649169A0096D86A /* relic_fp_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D0264916910096D86A /* relic_fp_add_low.c */; };
+		AA3963BE2649169A0096D86A /* relic_fb_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D1264916910096D86A /* relic_fb_inv.c */; };
+		AA3963BF2649169A0096D86A /* relic_ep_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D2264916910096D86A /* relic_ep_cmp.c */; };
+		AA3963C02649169A0096D86A /* relic_cp_phpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D3264916910096D86A /* relic_cp_phpe.c */; };
+		AA3963C12649169A0096D86A /* relic_bn_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D4264916910096D86A /* relic_bn_sqr_low.c */; };
+		AA3963C22649169A0096D86A /* relic_fp24_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D5264916910096D86A /* relic_fp24_sqr.c */; };
+		AA3963C32649169A0096D86A /* relic_fpx_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D6264916910096D86A /* relic_fpx_frb.c */; };
+		AA3963C42649169A0096D86A /* relic_mt_mpc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D7264916910096D86A /* relic_mt_mpc.c */; };
+		AA3963C52649169A0096D86A /* relic_ep_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D8264916910096D86A /* relic_ep_add.c */; };
+		AA3963C62649169A0096D86A /* relic_pc_mpc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962D9264916920096D86A /* relic_pc_mpc.c */; };
+		AA3963C72649169A0096D86A /* relic_pp_exp_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DA264916920096D86A /* relic_pp_exp_k12.c */; };
+		AA3963C82649169A0096D86A /* relic_fpx_field.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DB264916920096D86A /* relic_fpx_field.c */; };
+		AA3963C92649169A0096D86A /* relic_cp_rabin.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DC264916920096D86A /* relic_cp_rabin.c */; };
+		AA3963CA2649169A0096D86A /* relic_fpx_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DD264916920096D86A /* relic_fpx_rdc.c */; };
+		AA3963CB2649169A0096D86A /* rijndael-alg-fst.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DE264916920096D86A /* rijndael-alg-fst.c */; };
+		AA3963CC2649169A0096D86A /* relic_pp_dbl_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962DF264916920096D86A /* relic_pp_dbl_k48.c */; };
+		AA3963CD2649169A0096D86A /* relic_conf.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E0264916920096D86A /* relic_conf.c */; };
+		AA3963CE2649169A0096D86A /* relic_fb_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E1264916920096D86A /* relic_fb_srt.c */; };
+		AA3963CF2649169B0096D86A /* relic_ep_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E2264916920096D86A /* relic_ep_mul_fix.c */; };
+		AA3963D02649169B0096D86A /* sha384-512.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E3264916920096D86A /* sha384-512.c */; };
+		AA3963D12649169B0096D86A /* relic_ep_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E4264916920096D86A /* relic_ep_util.c */; };
+		AA3963D22649169B0096D86A /* relic_eb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E5264916920096D86A /* relic_eb_util.c */; };
+		AA3963D32649169B0096D86A /* relic_fpx_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E6264916920096D86A /* relic_fpx_sqr_low.c */; };
+		AA3963D42649169B0096D86A /* relic_fpx_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E7264916920096D86A /* relic_fpx_srt.c */; };
+		AA3963D52649169B0096D86A /* relic_fb2_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E8264916920096D86A /* relic_fb2_sqr.c */; };
+		AA3963D62649169B0096D86A /* relic_ep2_mul_cof.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962E9264916920096D86A /* relic_ep2_mul_cof.c */; };
+		AA3963D72649169B0096D86A /* relic_fb_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962EA264916920096D86A /* relic_fb_shift.c */; };
+		AA3963D82649169B0096D86A /* relic_ep2_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962EB264916920096D86A /* relic_ep2_norm.c */; };
+		AA3963D92649169B0096D86A /* relic_ep2_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962EC264916930096D86A /* relic_ep2_cmp.c */; };
+		AA3963DA2649169B0096D86A /* relic_cp_vbnn.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962ED264916930096D86A /* relic_cp_vbnn.c */; };
+		AA3963DB2649169B0096D86A /* relic_ep2_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962EE264916930096D86A /* relic_ep2_frb.c */; };
+		AA3963DC2649169B0096D86A /* relic_fb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962EF264916930096D86A /* relic_fb_util.c */; };
+		AA3963DD2649169B0096D86A /* relic_ep2_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F0264916930096D86A /* relic_ep2_pck.c */; };
+		AA3963DE2649169B0096D86A /* relic_pc_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F1264916930096D86A /* relic_pc_util.c */; };
+		AA3963DF2649169B0096D86A /* relic_bn_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F2264916930096D86A /* relic_bn_mem.c */; };
+		AA3963E02649169B0096D86A /* relic_bn_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F3264916930096D86A /* relic_bn_srt.c */; };
+		AA3963E12649169B0096D86A /* relic_fp_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F4264916930096D86A /* relic_fp_shift.c */; };
+		AA3963E22649169B0096D86A /* relic_fp_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F5264916930096D86A /* relic_fp_shift_low.c */; };
+		AA3963E32649169B0096D86A /* relic_pp_map_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F6264916930096D86A /* relic_pp_map_k12.c */; };
+		AA3963E42649169B0096D86A /* relic_fpx_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F7264916930096D86A /* relic_fpx_pck.c */; };
+		AA3963E52649169B0096D86A /* relic_pp_exp_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F8264916930096D86A /* relic_pp_exp_k8.c */; };
+		AA3963E62649169B0096D86A /* relic_fpx_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962F9264916930096D86A /* relic_fpx_add.c */; };
+		AA3963E72649169B0096D86A /* relic_bn_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FA264916930096D86A /* relic_bn_cmp.c */; };
+		AA3963E82649169B0096D86A /* relic_md_sha384.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FB264916930096D86A /* relic_md_sha384.c */; };
+		AA3963E92649169B0096D86A /* relic_bn_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FC264916930096D86A /* relic_bn_mul_low.c */; };
+		AA3963EA2649169B0096D86A /* relic_pc_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FD264916940096D86A /* relic_pc_exp.c */; };
+		AA3963EB2649169B0096D86A /* relic_rand_hashd.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FE264916940096D86A /* relic_rand_hashd.c */; };
+		AA3963EC2649169B0096D86A /* relic_fp_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3962FF264916940096D86A /* relic_fp_sqr_low.c */; };
+		AA3963ED2649169B0096D86A /* relic_md_blake2s.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396300264916940096D86A /* relic_md_blake2s.c */; };
+		AA3963EE2649169B0096D86A /* relic_ep_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396301264916940096D86A /* relic_ep_norm.c */; };
+		AA3963EF2649169B0096D86A /* relic_bn_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396302264916940096D86A /* relic_bn_add_low.c */; };
+		AA3963F02649169B0096D86A /* relic_ep_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396303264916940096D86A /* relic_ep_map.c */; };
+		AA3963F12649169B0096D86A /* relic_ed_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396304264916940096D86A /* relic_ed_map.c */; };
+		AA3963F22649169B0096D86A /* relic_fb2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396305264916940096D86A /* relic_fb2_mul.c */; };
+		AA3963F32649169B0096D86A /* relic_pc_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396306264916940096D86A /* relic_pc_core.c */; };
+		AA3963F42649169B0096D86A /* relic_pp_add_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396307264916940096D86A /* relic_pp_add_k12.c */; };
+		AA3963F52649169B0096D86A /* relic_cp_bbs.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396308264916940096D86A /* relic_cp_bbs.c */; };
+		AA3963F62649169B0096D86A /* relic_ep2_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396309264916940096D86A /* relic_ep2_mul_fix.c */; };
+		AA3963F72649169B0096D86A /* relic_fp48_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630A264916940096D86A /* relic_fp48_sqr.c */; };
+		AA3963F82649169B0096D86A /* relic_fp_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630B264916940096D86A /* relic_fp_inv.c */; };
+		AA3963F92649169B0096D86A /* relic_fp_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630C264916940096D86A /* relic_fp_mul.c */; };
+		AA3963FA2649169B0096D86A /* relic_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630D264916940096D86A /* relic_util.c */; };
+		AA3963FB2649169B0096D86A /* relic_ed_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630E264916940096D86A /* relic_ed_util.c */; };
+		AA3963FC2649169B0096D86A /* relic_ep_psi.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39630F264916940096D86A /* relic_ep_psi.c */; };
+		AA3963FD2649169B0096D86A /* relic_fpx_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396310264916950096D86A /* relic_fpx_inv.c */; };
+		AA3963FE2649169B0096D86A /* relic_cp_ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396311264916950096D86A /* relic_cp_ecdsa.c */; };
+		AA3963FF2649169B0096D86A /* relic_fp9_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396312264916950096D86A /* relic_fp9_mul.c */; };
+		AA3964002649169B0096D86A /* relic_eb_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396313264916950096D86A /* relic_eb_mul_fix.c */; };
+		AA3964012649169B0096D86A /* relic_fb_itr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396314264916950096D86A /* relic_fb_itr.c */; };
+		AA3964022649169B0096D86A /* relic_fb_inv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396315264916950096D86A /* relic_fb_inv_low.c */; };
+		AA3964032649169B0096D86A /* relic_md_kdf.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396316264916950096D86A /* relic_md_kdf.c */; };
+		AA3964042649169B0096D86A /* relic_bn_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396317264916950096D86A /* relic_bn_shift.c */; };
+		AA3964052649169B0096D86A /* relic_cp_cls.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396318264916950096D86A /* relic_cp_cls.c */; };
+		AA3964062649169B0096D86A /* relic_cp_bls.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396319264916950096D86A /* relic_cp_bls.c */; };
+		AA3964072649169B0096D86A /* relic_ed_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631A264916950096D86A /* relic_ed_mul_sim.c */; };
+		AA3964082649169B0096D86A /* relic_eb_hlv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631B264916950096D86A /* relic_eb_hlv.c */; };
+		AA3964092649169B0096D86A /* relic_fb_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631C264916950096D86A /* relic_fb_add_low.c */; };
+		AA39640A2649169B0096D86A /* relic_cp_mklhs.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631D264916950096D86A /* relic_cp_mklhs.c */; };
+		AA39640B2649169B0096D86A /* relic_ed_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631E264916950096D86A /* relic_ed_dbl.c */; };
+		AA39640C2649169B0096D86A /* relic_fb_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39631F264916950096D86A /* relic_fb_exp.c */; };
+		AA39640D2649169B0096D86A /* relic_fp2_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396320264916960096D86A /* relic_fp2_sqr.c */; };
+		AA39640E2649169B0096D86A /* relic_fp_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396321264916960096D86A /* relic_fp_add.c */; };
+		AA39640F2649169B0096D86A /* relic_fb_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396322264916960096D86A /* relic_fb_shift_low.c */; };
+		AA3964102649169B0096D86A /* relic_bn_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396323264916960096D86A /* relic_bn_mod.c */; };
+		AA3964112649169B0096D86A /* relic_fb_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396324264916960096D86A /* relic_fb_add.c */; };
+		AA3964122649169B0096D86A /* relic_eb_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396325264916960096D86A /* relic_eb_add.c */; };
+		AA3964132649169C0096D86A /* relic_bn_gcd.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396326264916960096D86A /* relic_bn_gcd.c */; };
+		AA3964142649169C0096D86A /* relic_fpx_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396327264916960096D86A /* relic_fpx_add_low.c */; };
+		AA3964152649169C0096D86A /* relic_fp_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396328264916960096D86A /* relic_fp_rdc_low.c */; };
+		AA3964162649169C0096D86A /* relic_ep_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396329264916960096D86A /* relic_ep_neg.c */; };
+		AA3964172649169C0096D86A /* rijndael-api-fst.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632A264916960096D86A /* rijndael-api-fst.c */; };
+		AA3964182649169C0096D86A /* relic_cp_ecmqv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632B264916960096D86A /* relic_cp_ecmqv.c */; };
+		AA3964192649169C0096D86A /* relic_bn_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632C264916960096D86A /* relic_bn_inv.c */; };
+		AA39641A2649169C0096D86A /* relic_eb_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632D264916960096D86A /* relic_eb_mul.c */; };
+		AA39641B2649169C0096D86A /* relic_fp4_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632E264916960096D86A /* relic_fp4_mul.c */; };
+		AA39641C2649169C0096D86A /* relic_fp18_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39632F264916960096D86A /* relic_fp18_sqr.c */; };
+		AA39641D2649169C0096D86A /* relic_md_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396330264916960096D86A /* relic_md_hmac.c */; };
+		AA39641E2649169C0096D86A /* relic_fp_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396331264916960096D86A /* relic_fp_cmp.c */; };
+		AA39641F2649169C0096D86A /* relic_ep_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396332264916970096D86A /* relic_ep_param.c */; };
+		AA3964202649169C0096D86A /* relic_pp_map_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396333264916970096D86A /* relic_pp_map_k54.c */; };
+		AA3964212649169C0096D86A /* relic_arch_x64.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396334264916970096D86A /* relic_arch_x64.c */; };
+		AA3964222649169C0096D86A /* relic_ep2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396335264916970096D86A /* relic_ep2_mul.c */; };
+		AA3964232649169C0096D86A /* relic_fp54_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396336264916970096D86A /* relic_fp54_mul.c */; };
+		AA3964242649169C0096D86A /* relic_cp_ecss.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396337264916970096D86A /* relic_cp_ecss.c */; };
+		AA3964252649169C0096D86A /* relic_md_sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396338264916970096D86A /* relic_md_sha256.c */; };
+		AA3964262649169C0096D86A /* relic_fp_inv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396339264916970096D86A /* relic_fp_inv_low.c */; };
+		AA3964272649169C0096D86A /* relic_pp_dbl_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633A264916970096D86A /* relic_pp_dbl_k8.c */; };
+		AA3964282649169C0096D86A /* relic_fp6_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633B264916970096D86A /* relic_fp6_sqr.c */; };
+		AA3964292649169C0096D86A /* relic_ep_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633C264916970096D86A /* relic_ep_pck.c */; };
+		AA39642A2649169C0096D86A /* relic_md_sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633D264916970096D86A /* relic_md_sha512.c */; };
+		AA39642B2649169C0096D86A /* relic_eb_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633E264916970096D86A /* relic_eb_curve.c */; };
+		AA39642C2649169C0096D86A /* relic_bn_factor.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39633F264916970096D86A /* relic_bn_factor.c */; };
+		AA39642D2649169C0096D86A /* relic_cp_cmlhs.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396340264916970096D86A /* relic_cp_cmlhs.c */; };
+		AA39642E2649169C0096D86A /* relic_fb_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396341264916970096D86A /* relic_fb_param.c */; };
+		AA39642F2649169C0096D86A /* relic_ed_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396342264916970096D86A /* relic_ed_mul.c */; };
+		AA3964302649169C0096D86A /* relic_ep_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396343264916980096D86A /* relic_ep_dbl.c */; };
+		AA3964312649169C0096D86A /* relic_fp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396344264916980096D86A /* relic_fp_sqr.c */; };
+		AA3964322649169C0096D86A /* relic_fb_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396345264916980096D86A /* relic_fb_sqr.c */; };
+		AA3964332649169C0096D86A /* relic_fp6_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396346264916980096D86A /* relic_fp6_mul.c */; };
+		AA3964342649169C0096D86A /* relic_fp48_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396347264916980096D86A /* relic_fp48_mul.c */; };
+		AA3964352649169C0096D86A /* relic_cp_sokaka.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396348264916980096D86A /* relic_cp_sokaka.c */; };
+		AA3964362649169C0096D86A /* relic_bn_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396349264916980096D86A /* relic_bn_add.c */; };
+		AA3964372649169C0096D86A /* relic_pp_map_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634A264916980096D86A /* relic_pp_map_k8.c */; };
+		AA3964382649169C0096D86A /* relic_ep_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634B264916980096D86A /* relic_ep_curve.c */; };
+		AA3964392649169C0096D86A /* relic_ep_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634C264916980096D86A /* relic_ep_mul_sim.c */; };
+		AA39643A2649169C0096D86A /* relic_bn_rec.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634D264916980096D86A /* relic_bn_rec.c */; };
+		AA39643B2649169C0096D86A /* relic_ed_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634E264916980096D86A /* relic_ed_curve.c */; };
+		AA39643C2649169C0096D86A /* relic_fpx_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA39634F264916980096D86A /* relic_fpx_mul_low.c */; };
+		AA39643D2649169C0096D86A /* relic_ed_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396350264916980096D86A /* relic_ed_mul_fix.c */; };
+		AA39643E2649169C0096D86A /* relic_fp2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396351264916980096D86A /* relic_fp2_mul.c */; };
+		AA39643F2649169C0096D86A /* relic_fp24_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396352264916980096D86A /* relic_fp24_mul.c */; };
+		AA3964402649169C0096D86A /* relic_bn_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396353264916980096D86A /* relic_bn_shift_low.c */; };
+		AA3964412649169C0096D86A /* relic_ep2_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396354264916990096D86A /* relic_ep2_add.c */; };
+		AA3964422649169C0096D86A /* relic_ed_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396355264916990096D86A /* relic_ed_cmp.c */; };
+		AA3964432649169C0096D86A /* relic_ed_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396356264916990096D86A /* relic_ed_norm.c */; };
+		AA3964442649169C0096D86A /* relic_ed_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396357264916990096D86A /* relic_ed_pck.c */; };
+		AA3964452649169C0096D86A /* relic_pp_exp_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AA396358264916990096D86A /* relic_pp_exp_k48.c */; };
+		AA39644E264918B70096D86A /* lzcnt.inc in Sources */ = {isa = PBXBuildFile; fileRef = AA39644D264918B70096D86A /* lzcnt.inc */; };
+		AA39646326491B270096D86A /* privatekey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA39645F26491B270096D86A /* privatekey.cpp */; };
+		AA39646426491B270096D86A /* bls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA39646026491B270096D86A /* bls.cpp */; };
+		AA39646526491B270096D86A /* elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA39646126491B270096D86A /* elements.cpp */; };
+		AA39646626491B270096D86A /* schemes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA39646226491B270096D86A /* schemes.cpp */; };
+		AA3989D62649A55C0096D86A /* librelic_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA395920264914E10096D86A /* librelic_s.a */; };
+		AA3989D72649A5600096D86A /* libpbls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA39645526491ABA0096D86A /* libpbls.a */; };
+		AA3989E42649A64E0096D86A /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3989E22649A64E0096D86A /* libsodium.a */; };
+		AA3989E52649A64E0096D86A /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3989E32649A64E0096D86A /* libgmp.a */; };
+		AA3989E72649AF8E0096D86A /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3989E62649AF8E0096D86A /* wrapper.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA395D21264915AE0096D86A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA39591F264914E10096D86A;
+			remoteInfo = relic_s;
+		};
+		AA3989DC2649A5CE0096D86A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA39645426491ABA0096D86A;
+			remoteInfo = pbls;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -24,6 +288,24 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39591E264914E10096D86A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39645326491ABA0096D86A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -42,10 +324,329 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA395920264914E10096D86A /* librelic_s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librelic_s.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA395928264915220096D86A /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		AA395D24264915FB0096D86A /* relic_epx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_epx.h; sourceTree = "<group>"; };
+		AA395D25264915FB0096D86A /* relic_ed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_ed.h; sourceTree = "<group>"; };
+		AA395D26264915FB0096D86A /* relic_pp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_pp.h; sourceTree = "<group>"; };
+		AA395D27264915FB0096D86A /* relic_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_types.h; sourceTree = "<group>"; };
+		AA395D28264915FB0096D86A /* relic_fpx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fpx.h; sourceTree = "<group>"; };
+		AA395D29264915FB0096D86A /* relic_dv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_dv.h; sourceTree = "<group>"; };
+		AA395D2A264915FB0096D86A /* relic_label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_label.h; sourceTree = "<group>"; };
+		AA395D2C264915FB0096D86A /* relic_fpx_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fpx_low.h; sourceTree = "<group>"; };
+		AA395D2D264915FB0096D86A /* relic_bn_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_bn_low.h; sourceTree = "<group>"; };
+		AA395D2E264915FB0096D86A /* relic_fp_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fp_low.h; sourceTree = "<group>"; };
+		AA395D2F264915FB0096D86A /* relic_dv_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_dv_low.h; sourceTree = "<group>"; };
+		AA395D30264915FB0096D86A /* relic_fb_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fb_low.h; sourceTree = "<group>"; };
+		AA395D31264915FB0096D86A /* relic_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_core.h; sourceTree = "<group>"; };
+		AA395D32264915FB0096D86A /* relic_ec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_ec.h; sourceTree = "<group>"; };
+		AA395D33264915FB0096D86A /* relic_fbx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fbx.h; sourceTree = "<group>"; };
+		AA395D34264915FB0096D86A /* relic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic.h; sourceTree = "<group>"; };
+		AA395D35264915FB0096D86A /* relic_fp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fp.h; sourceTree = "<group>"; };
+		AA395D36264915FB0096D86A /* relic_fb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_fb.h; sourceTree = "<group>"; };
+		AA395D37264915FB0096D86A /* relic_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_test.h; sourceTree = "<group>"; };
+		AA395D38264915FB0096D86A /* relic_cp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_cp.h; sourceTree = "<group>"; };
+		AA395D39264915FB0096D86A /* relic_bench.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_bench.h; sourceTree = "<group>"; };
+		AA395D3A264915FB0096D86A /* relic_eb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_eb.h; sourceTree = "<group>"; };
+		AA395D3B264915FB0096D86A /* relic_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_util.h; sourceTree = "<group>"; };
+		AA395D3C264915FB0096D86A /* relic_md.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_md.h; sourceTree = "<group>"; };
+		AA395D3D264915FB0096D86A /* relic_rand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_rand.h; sourceTree = "<group>"; };
+		AA395D3E264915FB0096D86A /* relic_bc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_bc.h; sourceTree = "<group>"; };
+		AA395D3F264915FB0096D86A /* relic_mpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_mpc.h; sourceTree = "<group>"; };
+		AA395D40264915FB0096D86A /* relic_conf.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = relic_conf.h.in; sourceTree = "<group>"; };
+		AA395D41264915FB0096D86A /* relic_ep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_ep.h; sourceTree = "<group>"; };
+		AA395D42264915FB0096D86A /* relic_multi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_multi.h; sourceTree = "<group>"; };
+		AA395D43264915FB0096D86A /* relic_err.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_err.h; sourceTree = "<group>"; };
+		AA395D44264915FB0096D86A /* relic_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_alloc.h; sourceTree = "<group>"; };
+		AA395D45264915FB0096D86A /* relic_arch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_arch.h; sourceTree = "<group>"; };
+		AA395D46264915FB0096D86A /* relic_pc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_pc.h; sourceTree = "<group>"; };
+		AA395D47264915FB0096D86A /* relic_bn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_bn.h; sourceTree = "<group>"; };
+		AA39626C2649168B0096D86A /* relic_ed_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_neg.c; sourceTree = "<group>"; };
+		AA39626D2649168B0096D86A /* relic_ep_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul.c; sourceTree = "<group>"; };
+		AA39626E2649168B0096D86A /* relic_dv_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_dv_util.c; sourceTree = "<group>"; };
+		AA39626F2649168B0096D86A /* relic_bn_prime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_prime.c; sourceTree = "<group>"; };
+		AA3962702649168B0096D86A /* relic_rand_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_rand_core.c; sourceTree = "<group>"; };
+		AA3962712649168B0096D86A /* relic_ep2_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_util.c; sourceTree = "<group>"; };
+		AA3962722649168B0096D86A /* relic_bn_mod_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mod_low.c; sourceTree = "<group>"; };
+		AA3962732649168C0096D86A /* relic_cp_bgn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bgn.c; sourceTree = "<group>"; };
+		AA3962742649168C0096D86A /* relic_eb_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_param.c; sourceTree = "<group>"; };
+		AA3962752649168C0096D86A /* relic_pp_dbl_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k54.c; sourceTree = "<group>"; };
+		AA3962762649168C0096D86A /* relic_fp_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_rdc.c; sourceTree = "<group>"; };
+		AA3962772649168C0096D86A /* relic_fb_srt_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_srt_low.c; sourceTree = "<group>"; };
+		AA3962782649168C0096D86A /* relic_fb_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_cmp.c; sourceTree = "<group>"; };
+		AA3962792649168C0096D86A /* relic_cp_ibe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ibe.c; sourceTree = "<group>"; };
+		AA39627A2649168C0096D86A /* relic_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_core.c; sourceTree = "<group>"; };
+		AA39627B2649168C0096D86A /* relic_fp_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_util.c; sourceTree = "<group>"; };
+		AA39627C2649168C0096D86A /* relic_fpx_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_util.c; sourceTree = "<group>"; };
+		AA39627D2649168C0096D86A /* relic_fp12_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp12_sqr.c; sourceTree = "<group>"; };
+		AA39627E2649168C0096D86A /* relic_fb_itr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_itr_low.c; sourceTree = "<group>"; };
+		AA39627F2649168C0096D86A /* relic_pp_map_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k48.c; sourceTree = "<group>"; };
+		AA3962802649168C0096D86A /* relic_eb_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_pck.c; sourceTree = "<group>"; };
+		AA3962812649168C0096D86A /* relic_bn_smb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_smb.c; sourceTree = "<group>"; };
+		AA3962822649168C0096D86A /* relic_fb_trc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_trc_low.c; sourceTree = "<group>"; };
+		AA3962832649168C0096D86A /* relic_eb_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_dbl.c; sourceTree = "<group>"; };
+		AA3962842649168D0096D86A /* relic_fp4_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp4_sqr.c; sourceTree = "<group>"; };
+		AA3962852649168D0096D86A /* relic_fp8_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp8_sqr.c; sourceTree = "<group>"; };
+		AA3962862649168D0096D86A /* relic_fb_poly.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_poly.c; sourceTree = "<group>"; };
+		AA3962872649168D0096D86A /* relic_fb_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_sqr_low.c; sourceTree = "<group>"; };
+		AA3962882649168D0096D86A /* relic_fp_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_mul_low.c; sourceTree = "<group>"; };
+		AA3962892649168D0096D86A /* relic_fp9_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp9_sqr.c; sourceTree = "<group>"; };
+		AA39628A2649168D0096D86A /* relic_pp_dbl_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k2.c; sourceTree = "<group>"; };
+		AA39628B2649168D0096D86A /* relic_fp_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_param.c; sourceTree = "<group>"; };
+		AA39628C2649168D0096D86A /* relic_eb_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_map.c; sourceTree = "<group>"; };
+		AA39628D2649168D0096D86A /* relic_md_sha224.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha224.c; sourceTree = "<group>"; };
+		AA39628E2649168D0096D86A /* relic_pp_exp_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k2.c; sourceTree = "<group>"; };
+		AA39628F2649168D0096D86A /* relic_fpx_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_cmp.c; sourceTree = "<group>"; };
+		AA3962902649168D0096D86A /* relic_fb_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_mul_low.c; sourceTree = "<group>"; };
+		AA3962912649168D0096D86A /* relic_fpx_cyc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_cyc.c; sourceTree = "<group>"; };
+		AA3962922649168E0096D86A /* relic_fp3_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp3_sqr.c; sourceTree = "<group>"; };
+		AA3962932649168E0096D86A /* relic_bc_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bc_aes.c; sourceTree = "<group>"; };
+		AA3962942649168E0096D86A /* relic_fb2_slv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_slv.c; sourceTree = "<group>"; };
+		AA3962952649168E0096D86A /* relic_eb_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_frb.c; sourceTree = "<group>"; };
+		AA3962962649168E0096D86A /* relic_md_mgf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_mgf.c; sourceTree = "<group>"; };
+		AA3962972649168E0096D86A /* relic_ed_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_add.c; sourceTree = "<group>"; };
+		AA3962982649168E0096D86A /* relic_ep2_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_neg.c; sourceTree = "<group>"; };
+		AA3962992649168E0096D86A /* relic_pp_add_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k54.c; sourceTree = "<group>"; };
+		AA39629A2649168E0096D86A /* relic_fb2_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_inv.c; sourceTree = "<group>"; };
+		AA39629B2649168E0096D86A /* relic_fp_prime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_prime.c; sourceTree = "<group>"; };
+		AA39629C2649168E0096D86A /* relic_bn_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mul.c; sourceTree = "<group>"; };
+		AA39629D2649168E0096D86A /* relic_pp_dbl_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k12.c; sourceTree = "<group>"; };
+		AA39629E2649168E0096D86A /* relic_pp_add_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k8.c; sourceTree = "<group>"; };
+		AA39629F2649168F0096D86A /* relic_ed_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_param.c; sourceTree = "<group>"; };
+		AA3962A02649168F0096D86A /* relic_cp_mpss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_mpss.c; sourceTree = "<group>"; };
+		AA3962A12649168F0096D86A /* relic_pp_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_norm.c; sourceTree = "<group>"; };
+		AA3962A22649168F0096D86A /* relic_fp8_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp8_mul.c; sourceTree = "<group>"; };
+		AA3962A32649168F0096D86A /* sha224-256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha224-256.c"; sourceTree = "<group>"; };
+		AA3962A42649168F0096D86A /* relic_bn_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_util.c; sourceTree = "<group>"; };
+		AA3962A52649168F0096D86A /* relic_cp_rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_rsa.c; sourceTree = "<group>"; };
+		AA3962A62649168F0096D86A /* relic_eb_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_neg.c; sourceTree = "<group>"; };
+		AA3962A72649168F0096D86A /* relic_fb_trc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_trc.c; sourceTree = "<group>"; };
+		AA3962A82649168F0096D86A /* relic_dv_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_dv_mem.c; sourceTree = "<group>"; };
+		AA3962A92649168F0096D86A /* relic_fp18_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp18_mul.c; sourceTree = "<group>"; };
+		AA3962AA2649168F0096D86A /* relic_eb_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul_sim.c; sourceTree = "<group>"; };
+		AA3962AB2649168F0096D86A /* relic_cp_zss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_zss.c; sourceTree = "<group>"; };
+		AA3962AC2649168F0096D86A /* relic_fpx_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_exp.c; sourceTree = "<group>"; };
+		AA3962AD2649168F0096D86A /* relic_bn_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_sqr.c; sourceTree = "<group>"; };
+		AA3962AE2649168F0096D86A /* relic_ep2_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_dbl.c; sourceTree = "<group>"; };
+		AA3962AF2649168F0096D86A /* relic_eb_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_norm.c; sourceTree = "<group>"; };
+		AA3962B02649168F0096D86A /* relic_ep2_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_sim.c; sourceTree = "<group>"; };
+		AA3962B12649168F0096D86A /* relic_pp_map_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k2.c; sourceTree = "<group>"; };
+		AA3962B22649168F0096D86A /* relic_fp12_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp12_mul.c; sourceTree = "<group>"; };
+		AA3962B3264916900096D86A /* relic_pp_add_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k2.c; sourceTree = "<group>"; };
+		AA3962B4264916900096D86A /* relic_ep2_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_curve.c; sourceTree = "<group>"; };
+		AA3962B5264916900096D86A /* relic_bn_lcm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_lcm.c; sourceTree = "<group>"; };
+		AA3962B6264916900096D86A /* relic_pp_exp_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k54.c; sourceTree = "<group>"; };
+		AA3962B7264916900096D86A /* relic_pp_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map.c; sourceTree = "<group>"; };
+		AA3962B8264916900096D86A /* relic_fb_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_mul.c; sourceTree = "<group>"; };
+		AA3962B9264916900096D86A /* relic_bn_div.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_div.c; sourceTree = "<group>"; };
+		AA3962BA264916900096D86A /* relic_eb_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_cmp.c; sourceTree = "<group>"; };
+		AA3962BB264916900096D86A /* relic_fb_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_rdc.c; sourceTree = "<group>"; };
+		AA3962BC264916900096D86A /* relic_cp_pss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_pss.c; sourceTree = "<group>"; };
+		AA3962BD264916900096D86A /* relic_md_xmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_xmd.c; sourceTree = "<group>"; };
+		AA3962BE264916900096D86A /* relic_ep2_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_map.c; sourceTree = "<group>"; };
+		AA3962BF264916900096D86A /* relic_cp_ecies.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecies.c; sourceTree = "<group>"; };
+		AA3962C0264916900096D86A /* relic_fp54_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp54_sqr.c; sourceTree = "<group>"; };
+		AA3962C1264916900096D86A /* relic_err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_err.c; sourceTree = "<group>"; };
+		AA3962C2264916900096D86A /* relic_pp_add_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k48.c; sourceTree = "<group>"; };
+		AA3962C3264916900096D86A /* relic_cp_ecdh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecdh.c; sourceTree = "<group>"; };
+		AA3962C4264916900096D86A /* relic_fb_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_rdc_low.c; sourceTree = "<group>"; };
+		AA3962C5264916900096D86A /* relic_fb_slv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_slv.c; sourceTree = "<group>"; };
+		AA3962C6264916900096D86A /* relic_bn_mxp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mxp.c; sourceTree = "<group>"; };
+		AA3962C7264916910096D86A /* relic_fp_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_exp.c; sourceTree = "<group>"; };
+		AA3962C8264916910096D86A /* relic_fp_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_srt.c; sourceTree = "<group>"; };
+		AA3962C9264916910096D86A /* relic_fp3_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp3_mul.c; sourceTree = "<group>"; };
+		AA3962CA264916910096D86A /* relic_cp_bdpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bdpe.c; sourceTree = "<group>"; };
+		AA3962CB264916910096D86A /* blake2s-ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "blake2s-ref.c"; sourceTree = "<group>"; };
+		AA3962CC264916910096D86A /* relic_fpx_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_rdc_low.c; sourceTree = "<group>"; };
+		AA3962CD264916910096D86A /* relic_bn_div_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_div_low.c; sourceTree = "<group>"; };
+		AA3962CE264916910096D86A /* relic_cp_ghpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ghpe.c; sourceTree = "<group>"; };
+		AA3962CF264916910096D86A /* relic_fb_slv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_slv_low.c; sourceTree = "<group>"; };
+		AA3962D0264916910096D86A /* relic_fp_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_add_low.c; sourceTree = "<group>"; };
+		AA3962D1264916910096D86A /* relic_fb_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_inv.c; sourceTree = "<group>"; };
+		AA3962D2264916910096D86A /* relic_ep_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_cmp.c; sourceTree = "<group>"; };
+		AA3962D3264916910096D86A /* relic_cp_phpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_phpe.c; sourceTree = "<group>"; };
+		AA3962D4264916910096D86A /* relic_bn_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_sqr_low.c; sourceTree = "<group>"; };
+		AA3962D5264916910096D86A /* relic_fp24_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp24_sqr.c; sourceTree = "<group>"; };
+		AA3962D6264916910096D86A /* relic_fpx_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_frb.c; sourceTree = "<group>"; };
+		AA3962D7264916910096D86A /* relic_mt_mpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_mt_mpc.c; sourceTree = "<group>"; };
+		AA3962D8264916910096D86A /* relic_ep_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_add.c; sourceTree = "<group>"; };
+		AA3962D9264916920096D86A /* relic_pc_mpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_mpc.c; sourceTree = "<group>"; };
+		AA3962DA264916920096D86A /* relic_pp_exp_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k12.c; sourceTree = "<group>"; };
+		AA3962DB264916920096D86A /* relic_fpx_field.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_field.c; sourceTree = "<group>"; };
+		AA3962DC264916920096D86A /* relic_cp_rabin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_rabin.c; sourceTree = "<group>"; };
+		AA3962DD264916920096D86A /* relic_fpx_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_rdc.c; sourceTree = "<group>"; };
+		AA3962DE264916920096D86A /* rijndael-alg-fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "rijndael-alg-fst.c"; sourceTree = "<group>"; };
+		AA3962DF264916920096D86A /* relic_pp_dbl_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k48.c; sourceTree = "<group>"; };
+		AA3962E0264916920096D86A /* relic_conf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_conf.c; sourceTree = "<group>"; };
+		AA3962E1264916920096D86A /* relic_fb_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_srt.c; sourceTree = "<group>"; };
+		AA3962E2264916920096D86A /* relic_ep_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul_fix.c; sourceTree = "<group>"; };
+		AA3962E3264916920096D86A /* sha384-512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha384-512.c"; sourceTree = "<group>"; };
+		AA3962E4264916920096D86A /* relic_ep_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_util.c; sourceTree = "<group>"; };
+		AA3962E5264916920096D86A /* relic_eb_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_util.c; sourceTree = "<group>"; };
+		AA3962E6264916920096D86A /* relic_fpx_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_sqr_low.c; sourceTree = "<group>"; };
+		AA3962E7264916920096D86A /* relic_fpx_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_srt.c; sourceTree = "<group>"; };
+		AA3962E8264916920096D86A /* relic_fb2_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_sqr.c; sourceTree = "<group>"; };
+		AA3962E9264916920096D86A /* relic_ep2_mul_cof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_cof.c; sourceTree = "<group>"; };
+		AA3962EA264916920096D86A /* relic_fb_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_shift.c; sourceTree = "<group>"; };
+		AA3962EB264916920096D86A /* relic_ep2_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_norm.c; sourceTree = "<group>"; };
+		AA3962EC264916930096D86A /* relic_ep2_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_cmp.c; sourceTree = "<group>"; };
+		AA3962ED264916930096D86A /* relic_cp_vbnn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_vbnn.c; sourceTree = "<group>"; };
+		AA3962EE264916930096D86A /* relic_ep2_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_frb.c; sourceTree = "<group>"; };
+		AA3962EF264916930096D86A /* relic_fb_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_util.c; sourceTree = "<group>"; };
+		AA3962F0264916930096D86A /* relic_ep2_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_pck.c; sourceTree = "<group>"; };
+		AA3962F1264916930096D86A /* relic_pc_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_util.c; sourceTree = "<group>"; };
+		AA3962F2264916930096D86A /* relic_bn_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mem.c; sourceTree = "<group>"; };
+		AA3962F3264916930096D86A /* relic_bn_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_srt.c; sourceTree = "<group>"; };
+		AA3962F4264916930096D86A /* relic_fp_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_shift.c; sourceTree = "<group>"; };
+		AA3962F5264916930096D86A /* relic_fp_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_shift_low.c; sourceTree = "<group>"; };
+		AA3962F6264916930096D86A /* relic_pp_map_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k12.c; sourceTree = "<group>"; };
+		AA3962F7264916930096D86A /* relic_fpx_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_pck.c; sourceTree = "<group>"; };
+		AA3962F8264916930096D86A /* relic_pp_exp_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k8.c; sourceTree = "<group>"; };
+		AA3962F9264916930096D86A /* relic_fpx_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_add.c; sourceTree = "<group>"; };
+		AA3962FA264916930096D86A /* relic_bn_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_cmp.c; sourceTree = "<group>"; };
+		AA3962FB264916930096D86A /* relic_md_sha384.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha384.c; sourceTree = "<group>"; };
+		AA3962FC264916930096D86A /* relic_bn_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mul_low.c; sourceTree = "<group>"; };
+		AA3962FD264916940096D86A /* relic_pc_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_exp.c; sourceTree = "<group>"; };
+		AA3962FE264916940096D86A /* relic_rand_hashd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_rand_hashd.c; sourceTree = "<group>"; };
+		AA3962FF264916940096D86A /* relic_fp_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_sqr_low.c; sourceTree = "<group>"; };
+		AA396300264916940096D86A /* relic_md_blake2s.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_blake2s.c; sourceTree = "<group>"; };
+		AA396301264916940096D86A /* relic_ep_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_norm.c; sourceTree = "<group>"; };
+		AA396302264916940096D86A /* relic_bn_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_add_low.c; sourceTree = "<group>"; };
+		AA396303264916940096D86A /* relic_ep_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_map.c; sourceTree = "<group>"; };
+		AA396304264916940096D86A /* relic_ed_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_map.c; sourceTree = "<group>"; };
+		AA396305264916940096D86A /* relic_fb2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_mul.c; sourceTree = "<group>"; };
+		AA396306264916940096D86A /* relic_pc_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_core.c; sourceTree = "<group>"; };
+		AA396307264916940096D86A /* relic_pp_add_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k12.c; sourceTree = "<group>"; };
+		AA396308264916940096D86A /* relic_cp_bbs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bbs.c; sourceTree = "<group>"; };
+		AA396309264916940096D86A /* relic_ep2_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_fix.c; sourceTree = "<group>"; };
+		AA39630A264916940096D86A /* relic_fp48_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp48_sqr.c; sourceTree = "<group>"; };
+		AA39630B264916940096D86A /* relic_fp_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_inv.c; sourceTree = "<group>"; };
+		AA39630C264916940096D86A /* relic_fp_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_mul.c; sourceTree = "<group>"; };
+		AA39630D264916940096D86A /* relic_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_util.c; sourceTree = "<group>"; };
+		AA39630E264916940096D86A /* relic_ed_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_util.c; sourceTree = "<group>"; };
+		AA39630F264916940096D86A /* relic_ep_psi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_psi.c; sourceTree = "<group>"; };
+		AA396310264916950096D86A /* relic_fpx_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_inv.c; sourceTree = "<group>"; };
+		AA396311264916950096D86A /* relic_cp_ecdsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecdsa.c; sourceTree = "<group>"; };
+		AA396312264916950096D86A /* relic_fp9_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp9_mul.c; sourceTree = "<group>"; };
+		AA396313264916950096D86A /* relic_eb_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul_fix.c; sourceTree = "<group>"; };
+		AA396314264916950096D86A /* relic_fb_itr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_itr.c; sourceTree = "<group>"; };
+		AA396315264916950096D86A /* relic_fb_inv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_inv_low.c; sourceTree = "<group>"; };
+		AA396316264916950096D86A /* relic_md_kdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_kdf.c; sourceTree = "<group>"; };
+		AA396317264916950096D86A /* relic_bn_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_shift.c; sourceTree = "<group>"; };
+		AA396318264916950096D86A /* relic_cp_cls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_cls.c; sourceTree = "<group>"; };
+		AA396319264916950096D86A /* relic_cp_bls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bls.c; sourceTree = "<group>"; };
+		AA39631A264916950096D86A /* relic_ed_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul_sim.c; sourceTree = "<group>"; };
+		AA39631B264916950096D86A /* relic_eb_hlv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_hlv.c; sourceTree = "<group>"; };
+		AA39631C264916950096D86A /* relic_fb_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_add_low.c; sourceTree = "<group>"; };
+		AA39631D264916950096D86A /* relic_cp_mklhs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_mklhs.c; sourceTree = "<group>"; };
+		AA39631E264916950096D86A /* relic_ed_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_dbl.c; sourceTree = "<group>"; };
+		AA39631F264916950096D86A /* relic_fb_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_exp.c; sourceTree = "<group>"; };
+		AA396320264916960096D86A /* relic_fp2_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp2_sqr.c; sourceTree = "<group>"; };
+		AA396321264916960096D86A /* relic_fp_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_add.c; sourceTree = "<group>"; };
+		AA396322264916960096D86A /* relic_fb_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_shift_low.c; sourceTree = "<group>"; };
+		AA396323264916960096D86A /* relic_bn_mod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mod.c; sourceTree = "<group>"; };
+		AA396324264916960096D86A /* relic_fb_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_add.c; sourceTree = "<group>"; };
+		AA396325264916960096D86A /* relic_eb_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_add.c; sourceTree = "<group>"; };
+		AA396326264916960096D86A /* relic_bn_gcd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_gcd.c; sourceTree = "<group>"; };
+		AA396327264916960096D86A /* relic_fpx_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_add_low.c; sourceTree = "<group>"; };
+		AA396328264916960096D86A /* relic_fp_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_rdc_low.c; sourceTree = "<group>"; };
+		AA396329264916960096D86A /* relic_ep_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_neg.c; sourceTree = "<group>"; };
+		AA39632A264916960096D86A /* rijndael-api-fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "rijndael-api-fst.c"; sourceTree = "<group>"; };
+		AA39632B264916960096D86A /* relic_cp_ecmqv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecmqv.c; sourceTree = "<group>"; };
+		AA39632C264916960096D86A /* relic_bn_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_inv.c; sourceTree = "<group>"; };
+		AA39632D264916960096D86A /* relic_eb_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul.c; sourceTree = "<group>"; };
+		AA39632E264916960096D86A /* relic_fp4_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp4_mul.c; sourceTree = "<group>"; };
+		AA39632F264916960096D86A /* relic_fp18_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp18_sqr.c; sourceTree = "<group>"; };
+		AA396330264916960096D86A /* relic_md_hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_hmac.c; sourceTree = "<group>"; };
+		AA396331264916960096D86A /* relic_fp_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_cmp.c; sourceTree = "<group>"; };
+		AA396332264916970096D86A /* relic_ep_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_param.c; sourceTree = "<group>"; };
+		AA396333264916970096D86A /* relic_pp_map_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k54.c; sourceTree = "<group>"; };
+		AA396334264916970096D86A /* relic_arch_x64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_arch_x64.c; sourceTree = "<group>"; };
+		AA396335264916970096D86A /* relic_ep2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul.c; sourceTree = "<group>"; };
+		AA396336264916970096D86A /* relic_fp54_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp54_mul.c; sourceTree = "<group>"; };
+		AA396337264916970096D86A /* relic_cp_ecss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecss.c; sourceTree = "<group>"; };
+		AA396338264916970096D86A /* relic_md_sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha256.c; sourceTree = "<group>"; };
+		AA396339264916970096D86A /* relic_fp_inv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_inv_low.c; sourceTree = "<group>"; };
+		AA39633A264916970096D86A /* relic_pp_dbl_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k8.c; sourceTree = "<group>"; };
+		AA39633B264916970096D86A /* relic_fp6_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp6_sqr.c; sourceTree = "<group>"; };
+		AA39633C264916970096D86A /* relic_ep_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_pck.c; sourceTree = "<group>"; };
+		AA39633D264916970096D86A /* relic_md_sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha512.c; sourceTree = "<group>"; };
+		AA39633E264916970096D86A /* relic_eb_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_curve.c; sourceTree = "<group>"; };
+		AA39633F264916970096D86A /* relic_bn_factor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_factor.c; sourceTree = "<group>"; };
+		AA396340264916970096D86A /* relic_cp_cmlhs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_cmlhs.c; sourceTree = "<group>"; };
+		AA396341264916970096D86A /* relic_fb_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_param.c; sourceTree = "<group>"; };
+		AA396342264916970096D86A /* relic_ed_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul.c; sourceTree = "<group>"; };
+		AA396343264916980096D86A /* relic_ep_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_dbl.c; sourceTree = "<group>"; };
+		AA396344264916980096D86A /* relic_fp_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_sqr.c; sourceTree = "<group>"; };
+		AA396345264916980096D86A /* relic_fb_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_sqr.c; sourceTree = "<group>"; };
+		AA396346264916980096D86A /* relic_fp6_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp6_mul.c; sourceTree = "<group>"; };
+		AA396347264916980096D86A /* relic_fp48_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp48_mul.c; sourceTree = "<group>"; };
+		AA396348264916980096D86A /* relic_cp_sokaka.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_sokaka.c; sourceTree = "<group>"; };
+		AA396349264916980096D86A /* relic_bn_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_add.c; sourceTree = "<group>"; };
+		AA39634A264916980096D86A /* relic_pp_map_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k8.c; sourceTree = "<group>"; };
+		AA39634B264916980096D86A /* relic_ep_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_curve.c; sourceTree = "<group>"; };
+		AA39634C264916980096D86A /* relic_ep_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul_sim.c; sourceTree = "<group>"; };
+		AA39634D264916980096D86A /* relic_bn_rec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_rec.c; sourceTree = "<group>"; };
+		AA39634E264916980096D86A /* relic_ed_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_curve.c; sourceTree = "<group>"; };
+		AA39634F264916980096D86A /* relic_fpx_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_mul_low.c; sourceTree = "<group>"; };
+		AA396350264916980096D86A /* relic_ed_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul_fix.c; sourceTree = "<group>"; };
+		AA396351264916980096D86A /* relic_fp2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp2_mul.c; sourceTree = "<group>"; };
+		AA396352264916980096D86A /* relic_fp24_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp24_mul.c; sourceTree = "<group>"; };
+		AA396353264916980096D86A /* relic_bn_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_shift_low.c; sourceTree = "<group>"; };
+		AA396354264916990096D86A /* relic_ep2_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_add.c; sourceTree = "<group>"; };
+		AA396355264916990096D86A /* relic_ed_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_cmp.c; sourceTree = "<group>"; };
+		AA396356264916990096D86A /* relic_ed_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_norm.c; sourceTree = "<group>"; };
+		AA396357264916990096D86A /* relic_ed_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_pck.c; sourceTree = "<group>"; };
+		AA396358264916990096D86A /* relic_pp_exp_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k48.c; sourceTree = "<group>"; };
+		AA3964462649171C0096D86A /* sha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		AA396447264917440096D86A /* relic_conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_conf.h; sourceTree = "<group>"; };
+		AA3964482649177D0096D86A /* gmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		AA396449264917B50096D86A /* sha_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha_private.h; sourceTree = "<group>"; };
+		AA39644A264917F10096D86A /* rijndael-alg-fst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rijndael-alg-fst.h"; sourceTree = "<group>"; };
+		AA39644B2649182A0096D86A /* rijndael-api-fst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rijndael-api-fst.h"; sourceTree = "<group>"; };
+		AA39644C264918530096D86A /* blake2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blake2.h; sourceTree = "<group>"; };
+		AA39644D264918B70096D86A /* lzcnt.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = lzcnt.inc; sourceTree = "<group>"; };
+		AA39644F264918F00096D86A /* relic_tmpl_map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relic_tmpl_map.h; sourceTree = "<group>"; };
+		AA396450264919550096D86A /* blake2-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blake2-impl.h"; sourceTree = "<group>"; };
+		AA39645526491ABA0096D86A /* libpbls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpbls.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA39645E26491B190096D86A /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		AA39645F26491B270096D86A /* privatekey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = privatekey.cpp; sourceTree = "<group>"; };
+		AA39646026491B270096D86A /* bls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bls.cpp; sourceTree = "<group>"; };
+		AA39646126491B270096D86A /* elements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elements.cpp; sourceTree = "<group>"; };
+		AA39646226491B270096D86A /* schemes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = schemes.cpp; sourceTree = "<group>"; };
+		AA39646826491B4C0096D86A /* test-utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "test-utils.hpp"; sourceTree = "<group>"; };
+		AA39646926491B4C0096D86A /* bls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bls.hpp; sourceTree = "<group>"; };
+		AA39646A26491B4C0096D86A /* hdkeys.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hdkeys.hpp; sourceTree = "<group>"; };
+		AA39646B26491B4C0096D86A /* hkdf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hkdf.hpp; sourceTree = "<group>"; };
+		AA39646C26491B4C0096D86A /* elements.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = elements.hpp; sourceTree = "<group>"; };
+		AA39646D26491B4C0096D86A /* privatekey.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = privatekey.hpp; sourceTree = "<group>"; };
+		AA39646E26491B4C0096D86A /* schemes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = schemes.hpp; sourceTree = "<group>"; };
+		AA39646F26491B4C0096D86A /* util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		AA3989E22649A64E0096D86A /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = Frameworks/libsodium.a; sourceTree = "<group>"; };
+		AA3989E32649A64E0096D86A /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = Frameworks/libgmp.a; sourceTree = "<group>"; };
+		AA3989E62649AF8E0096D86A /* wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3989E42649A64E0096D86A /* libsodium.a in Frameworks */,
+				AA3989D72649A5600096D86A /* libpbls.a in Frameworks */,
+				AA3989E52649A64E0096D86A /* libgmp.a in Frameworks */,
+				AA3989D62649A55C0096D86A /* librelic_s.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39591D264914E10096D86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39645226491ABA0096D86A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,9 +670,13 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				AA39590F2649149D0096D86A /* lib */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				AA395921264914E10096D86A /* relic_s */,
+				AA39645626491ABA0096D86A /* pbls */,
 				97C146EF1CF9000F007C117D /* Products */,
+				AA3989D32649A54E0096D86A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +684,8 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				AA395920264914E10096D86A /* librelic_s.a */,
+				AA39645526491ABA0096D86A /* libpbls.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +705,373 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		AA39590F2649149D0096D86A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AA3989E62649AF8E0096D86A /* wrapper.cpp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		AA395921264914E10096D86A /* relic_s */ = {
+			isa = PBXGroup;
+			children = (
+				AA39626B264916700096D86A /* Source Files */,
+				AA395D23264915FB0096D86A /* Headers */,
+				AA395928264915220096D86A /* CMakeLists.txt */,
+			);
+			path = relic_s;
+			sourceTree = "<group>";
+		};
+		AA395D23264915FB0096D86A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AA396450264919550096D86A /* blake2-impl.h */,
+				AA39644F264918F00096D86A /* relic_tmpl_map.h */,
+				AA39644C264918530096D86A /* blake2.h */,
+				AA39644B2649182A0096D86A /* rijndael-api-fst.h */,
+				AA39644A264917F10096D86A /* rijndael-alg-fst.h */,
+				AA396449264917B50096D86A /* sha_private.h */,
+				AA3964482649177D0096D86A /* gmp.h */,
+				AA396447264917440096D86A /* relic_conf.h */,
+				AA3964462649171C0096D86A /* sha.h */,
+				AA395D24264915FB0096D86A /* relic_epx.h */,
+				AA395D25264915FB0096D86A /* relic_ed.h */,
+				AA395D26264915FB0096D86A /* relic_pp.h */,
+				AA395D27264915FB0096D86A /* relic_types.h */,
+				AA395D28264915FB0096D86A /* relic_fpx.h */,
+				AA395D29264915FB0096D86A /* relic_dv.h */,
+				AA395D2A264915FB0096D86A /* relic_label.h */,
+				AA395D2B264915FB0096D86A /* low */,
+				AA395D31264915FB0096D86A /* relic_core.h */,
+				AA395D32264915FB0096D86A /* relic_ec.h */,
+				AA395D33264915FB0096D86A /* relic_fbx.h */,
+				AA395D34264915FB0096D86A /* relic.h */,
+				AA395D35264915FB0096D86A /* relic_fp.h */,
+				AA395D36264915FB0096D86A /* relic_fb.h */,
+				AA395D37264915FB0096D86A /* relic_test.h */,
+				AA395D38264915FB0096D86A /* relic_cp.h */,
+				AA395D39264915FB0096D86A /* relic_bench.h */,
+				AA395D3A264915FB0096D86A /* relic_eb.h */,
+				AA395D3B264915FB0096D86A /* relic_util.h */,
+				AA395D3C264915FB0096D86A /* relic_md.h */,
+				AA395D3D264915FB0096D86A /* relic_rand.h */,
+				AA395D3E264915FB0096D86A /* relic_bc.h */,
+				AA395D3F264915FB0096D86A /* relic_mpc.h */,
+				AA395D40264915FB0096D86A /* relic_conf.h.in */,
+				AA395D41264915FB0096D86A /* relic_ep.h */,
+				AA395D42264915FB0096D86A /* relic_multi.h */,
+				AA395D43264915FB0096D86A /* relic_err.h */,
+				AA395D44264915FB0096D86A /* relic_alloc.h */,
+				AA395D45264915FB0096D86A /* relic_arch.h */,
+				AA395D46264915FB0096D86A /* relic_pc.h */,
+				AA395D47264915FB0096D86A /* relic_bn.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		AA395D2B264915FB0096D86A /* low */ = {
+			isa = PBXGroup;
+			children = (
+				AA395D2C264915FB0096D86A /* relic_fpx_low.h */,
+				AA395D2D264915FB0096D86A /* relic_bn_low.h */,
+				AA395D2E264915FB0096D86A /* relic_fp_low.h */,
+				AA395D2F264915FB0096D86A /* relic_dv_low.h */,
+				AA395D30264915FB0096D86A /* relic_fb_low.h */,
+			);
+			path = low;
+			sourceTree = "<group>";
+		};
+		AA39626B264916700096D86A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA39644D264918B70096D86A /* lzcnt.inc */,
+				AA3962CB264916910096D86A /* blake2s-ref.c */,
+				AA396334264916970096D86A /* relic_arch_x64.c */,
+				AA3962932649168E0096D86A /* relic_bc_aes.c */,
+				AA396302264916940096D86A /* relic_bn_add_low.c */,
+				AA396349264916980096D86A /* relic_bn_add.c */,
+				AA3962FA264916930096D86A /* relic_bn_cmp.c */,
+				AA3962CD264916910096D86A /* relic_bn_div_low.c */,
+				AA3962B9264916900096D86A /* relic_bn_div.c */,
+				AA39633F264916970096D86A /* relic_bn_factor.c */,
+				AA396326264916960096D86A /* relic_bn_gcd.c */,
+				AA39632C264916960096D86A /* relic_bn_inv.c */,
+				AA3962B5264916900096D86A /* relic_bn_lcm.c */,
+				AA3962F2264916930096D86A /* relic_bn_mem.c */,
+				AA3962722649168B0096D86A /* relic_bn_mod_low.c */,
+				AA396323264916960096D86A /* relic_bn_mod.c */,
+				AA3962FC264916930096D86A /* relic_bn_mul_low.c */,
+				AA39629C2649168E0096D86A /* relic_bn_mul.c */,
+				AA3962C6264916900096D86A /* relic_bn_mxp.c */,
+				AA39626F2649168B0096D86A /* relic_bn_prime.c */,
+				AA39634D264916980096D86A /* relic_bn_rec.c */,
+				AA396353264916980096D86A /* relic_bn_shift_low.c */,
+				AA396317264916950096D86A /* relic_bn_shift.c */,
+				AA3962812649168C0096D86A /* relic_bn_smb.c */,
+				AA3962D4264916910096D86A /* relic_bn_sqr_low.c */,
+				AA3962AD2649168F0096D86A /* relic_bn_sqr.c */,
+				AA3962F3264916930096D86A /* relic_bn_srt.c */,
+				AA3962A42649168F0096D86A /* relic_bn_util.c */,
+				AA3962E0264916920096D86A /* relic_conf.c */,
+				AA39627A2649168C0096D86A /* relic_core.c */,
+				AA396308264916940096D86A /* relic_cp_bbs.c */,
+				AA3962CA264916910096D86A /* relic_cp_bdpe.c */,
+				AA3962732649168C0096D86A /* relic_cp_bgn.c */,
+				AA396319264916950096D86A /* relic_cp_bls.c */,
+				AA396318264916950096D86A /* relic_cp_cls.c */,
+				AA396340264916970096D86A /* relic_cp_cmlhs.c */,
+				AA3962C3264916900096D86A /* relic_cp_ecdh.c */,
+				AA396311264916950096D86A /* relic_cp_ecdsa.c */,
+				AA3962BF264916900096D86A /* relic_cp_ecies.c */,
+				AA39632B264916960096D86A /* relic_cp_ecmqv.c */,
+				AA396337264916970096D86A /* relic_cp_ecss.c */,
+				AA3962CE264916910096D86A /* relic_cp_ghpe.c */,
+				AA3962792649168C0096D86A /* relic_cp_ibe.c */,
+				AA39631D264916950096D86A /* relic_cp_mklhs.c */,
+				AA3962A02649168F0096D86A /* relic_cp_mpss.c */,
+				AA3962D3264916910096D86A /* relic_cp_phpe.c */,
+				AA3962BC264916900096D86A /* relic_cp_pss.c */,
+				AA3962DC264916920096D86A /* relic_cp_rabin.c */,
+				AA3962A52649168F0096D86A /* relic_cp_rsa.c */,
+				AA396348264916980096D86A /* relic_cp_sokaka.c */,
+				AA3962ED264916930096D86A /* relic_cp_vbnn.c */,
+				AA3962AB2649168F0096D86A /* relic_cp_zss.c */,
+				AA3962A82649168F0096D86A /* relic_dv_mem.c */,
+				AA39626E2649168B0096D86A /* relic_dv_util.c */,
+				AA396325264916960096D86A /* relic_eb_add.c */,
+				AA3962BA264916900096D86A /* relic_eb_cmp.c */,
+				AA39633E264916970096D86A /* relic_eb_curve.c */,
+				AA3962832649168C0096D86A /* relic_eb_dbl.c */,
+				AA3962952649168E0096D86A /* relic_eb_frb.c */,
+				AA39631B264916950096D86A /* relic_eb_hlv.c */,
+				AA39628C2649168D0096D86A /* relic_eb_map.c */,
+				AA396313264916950096D86A /* relic_eb_mul_fix.c */,
+				AA3962AA2649168F0096D86A /* relic_eb_mul_sim.c */,
+				AA39632D264916960096D86A /* relic_eb_mul.c */,
+				AA3962A62649168F0096D86A /* relic_eb_neg.c */,
+				AA3962AF2649168F0096D86A /* relic_eb_norm.c */,
+				AA3962742649168C0096D86A /* relic_eb_param.c */,
+				AA3962802649168C0096D86A /* relic_eb_pck.c */,
+				AA3962E5264916920096D86A /* relic_eb_util.c */,
+				AA3962972649168E0096D86A /* relic_ed_add.c */,
+				AA396355264916990096D86A /* relic_ed_cmp.c */,
+				AA39634E264916980096D86A /* relic_ed_curve.c */,
+				AA39631E264916950096D86A /* relic_ed_dbl.c */,
+				AA396304264916940096D86A /* relic_ed_map.c */,
+				AA396350264916980096D86A /* relic_ed_mul_fix.c */,
+				AA39631A264916950096D86A /* relic_ed_mul_sim.c */,
+				AA396342264916970096D86A /* relic_ed_mul.c */,
+				AA39626C2649168B0096D86A /* relic_ed_neg.c */,
+				AA396356264916990096D86A /* relic_ed_norm.c */,
+				AA39629F2649168F0096D86A /* relic_ed_param.c */,
+				AA396357264916990096D86A /* relic_ed_pck.c */,
+				AA39630E264916940096D86A /* relic_ed_util.c */,
+				AA3962D8264916910096D86A /* relic_ep_add.c */,
+				AA3962D2264916910096D86A /* relic_ep_cmp.c */,
+				AA39634B264916980096D86A /* relic_ep_curve.c */,
+				AA396343264916980096D86A /* relic_ep_dbl.c */,
+				AA396303264916940096D86A /* relic_ep_map.c */,
+				AA3962E2264916920096D86A /* relic_ep_mul_fix.c */,
+				AA39634C264916980096D86A /* relic_ep_mul_sim.c */,
+				AA39626D2649168B0096D86A /* relic_ep_mul.c */,
+				AA396329264916960096D86A /* relic_ep_neg.c */,
+				AA396301264916940096D86A /* relic_ep_norm.c */,
+				AA396332264916970096D86A /* relic_ep_param.c */,
+				AA39633C264916970096D86A /* relic_ep_pck.c */,
+				AA39630F264916940096D86A /* relic_ep_psi.c */,
+				AA3962E4264916920096D86A /* relic_ep_util.c */,
+				AA396354264916990096D86A /* relic_ep2_add.c */,
+				AA3962EC264916930096D86A /* relic_ep2_cmp.c */,
+				AA3962B4264916900096D86A /* relic_ep2_curve.c */,
+				AA3962AE2649168F0096D86A /* relic_ep2_dbl.c */,
+				AA3962EE264916930096D86A /* relic_ep2_frb.c */,
+				AA3962BE264916900096D86A /* relic_ep2_map.c */,
+				AA3962E9264916920096D86A /* relic_ep2_mul_cof.c */,
+				AA396309264916940096D86A /* relic_ep2_mul_fix.c */,
+				AA3962B02649168F0096D86A /* relic_ep2_mul_sim.c */,
+				AA396335264916970096D86A /* relic_ep2_mul.c */,
+				AA3962982649168E0096D86A /* relic_ep2_neg.c */,
+				AA3962EB264916920096D86A /* relic_ep2_norm.c */,
+				AA3962F0264916930096D86A /* relic_ep2_pck.c */,
+				AA3962712649168B0096D86A /* relic_ep2_util.c */,
+				AA3962C1264916900096D86A /* relic_err.c */,
+				AA39631C264916950096D86A /* relic_fb_add_low.c */,
+				AA396324264916960096D86A /* relic_fb_add.c */,
+				AA3962782649168C0096D86A /* relic_fb_cmp.c */,
+				AA39631F264916950096D86A /* relic_fb_exp.c */,
+				AA396315264916950096D86A /* relic_fb_inv_low.c */,
+				AA3962D1264916910096D86A /* relic_fb_inv.c */,
+				AA39627E2649168C0096D86A /* relic_fb_itr_low.c */,
+				AA396314264916950096D86A /* relic_fb_itr.c */,
+				AA3962902649168D0096D86A /* relic_fb_mul_low.c */,
+				AA3962B8264916900096D86A /* relic_fb_mul.c */,
+				AA396341264916970096D86A /* relic_fb_param.c */,
+				AA3962862649168D0096D86A /* relic_fb_poly.c */,
+				AA3962C4264916900096D86A /* relic_fb_rdc_low.c */,
+				AA3962BB264916900096D86A /* relic_fb_rdc.c */,
+				AA396322264916960096D86A /* relic_fb_shift_low.c */,
+				AA3962EA264916920096D86A /* relic_fb_shift.c */,
+				AA3962CF264916910096D86A /* relic_fb_slv_low.c */,
+				AA3962C5264916900096D86A /* relic_fb_slv.c */,
+				AA3962872649168D0096D86A /* relic_fb_sqr_low.c */,
+				AA396345264916980096D86A /* relic_fb_sqr.c */,
+				AA3962772649168C0096D86A /* relic_fb_srt_low.c */,
+				AA3962E1264916920096D86A /* relic_fb_srt.c */,
+				AA3962822649168C0096D86A /* relic_fb_trc_low.c */,
+				AA3962A72649168F0096D86A /* relic_fb_trc.c */,
+				AA3962EF264916930096D86A /* relic_fb_util.c */,
+				AA39629A2649168E0096D86A /* relic_fb2_inv.c */,
+				AA396305264916940096D86A /* relic_fb2_mul.c */,
+				AA3962942649168E0096D86A /* relic_fb2_slv.c */,
+				AA3962E8264916920096D86A /* relic_fb2_sqr.c */,
+				AA3962D0264916910096D86A /* relic_fp_add_low.c */,
+				AA396321264916960096D86A /* relic_fp_add.c */,
+				AA396331264916960096D86A /* relic_fp_cmp.c */,
+				AA3962C7264916910096D86A /* relic_fp_exp.c */,
+				AA396339264916970096D86A /* relic_fp_inv_low.c */,
+				AA39630B264916940096D86A /* relic_fp_inv.c */,
+				AA3962882649168D0096D86A /* relic_fp_mul_low.c */,
+				AA39630C264916940096D86A /* relic_fp_mul.c */,
+				AA39628B2649168D0096D86A /* relic_fp_param.c */,
+				AA39629B2649168E0096D86A /* relic_fp_prime.c */,
+				AA396328264916960096D86A /* relic_fp_rdc_low.c */,
+				AA3962762649168C0096D86A /* relic_fp_rdc.c */,
+				AA3962F5264916930096D86A /* relic_fp_shift_low.c */,
+				AA3962F4264916930096D86A /* relic_fp_shift.c */,
+				AA3962FF264916940096D86A /* relic_fp_sqr_low.c */,
+				AA396344264916980096D86A /* relic_fp_sqr.c */,
+				AA3962C8264916910096D86A /* relic_fp_srt.c */,
+				AA39627B2649168C0096D86A /* relic_fp_util.c */,
+				AA396351264916980096D86A /* relic_fp2_mul.c */,
+				AA396320264916960096D86A /* relic_fp2_sqr.c */,
+				AA3962C9264916910096D86A /* relic_fp3_mul.c */,
+				AA3962922649168E0096D86A /* relic_fp3_sqr.c */,
+				AA39632E264916960096D86A /* relic_fp4_mul.c */,
+				AA3962842649168D0096D86A /* relic_fp4_sqr.c */,
+				AA396346264916980096D86A /* relic_fp6_mul.c */,
+				AA39633B264916970096D86A /* relic_fp6_sqr.c */,
+				AA3962A22649168F0096D86A /* relic_fp8_mul.c */,
+				AA3962852649168D0096D86A /* relic_fp8_sqr.c */,
+				AA396312264916950096D86A /* relic_fp9_mul.c */,
+				AA3962892649168D0096D86A /* relic_fp9_sqr.c */,
+				AA3962B22649168F0096D86A /* relic_fp12_mul.c */,
+				AA39627D2649168C0096D86A /* relic_fp12_sqr.c */,
+				AA3962A92649168F0096D86A /* relic_fp18_mul.c */,
+				AA39632F264916960096D86A /* relic_fp18_sqr.c */,
+				AA396352264916980096D86A /* relic_fp24_mul.c */,
+				AA3962D5264916910096D86A /* relic_fp24_sqr.c */,
+				AA396347264916980096D86A /* relic_fp48_mul.c */,
+				AA39630A264916940096D86A /* relic_fp48_sqr.c */,
+				AA396336264916970096D86A /* relic_fp54_mul.c */,
+				AA3962C0264916900096D86A /* relic_fp54_sqr.c */,
+				AA396327264916960096D86A /* relic_fpx_add_low.c */,
+				AA3962F9264916930096D86A /* relic_fpx_add.c */,
+				AA39628F2649168D0096D86A /* relic_fpx_cmp.c */,
+				AA3962912649168D0096D86A /* relic_fpx_cyc.c */,
+				AA3962AC2649168F0096D86A /* relic_fpx_exp.c */,
+				AA3962DB264916920096D86A /* relic_fpx_field.c */,
+				AA3962D6264916910096D86A /* relic_fpx_frb.c */,
+				AA396310264916950096D86A /* relic_fpx_inv.c */,
+				AA39634F264916980096D86A /* relic_fpx_mul_low.c */,
+				AA3962F7264916930096D86A /* relic_fpx_pck.c */,
+				AA3962CC264916910096D86A /* relic_fpx_rdc_low.c */,
+				AA3962DD264916920096D86A /* relic_fpx_rdc.c */,
+				AA3962E6264916920096D86A /* relic_fpx_sqr_low.c */,
+				AA3962E7264916920096D86A /* relic_fpx_srt.c */,
+				AA39627C2649168C0096D86A /* relic_fpx_util.c */,
+				AA396300264916940096D86A /* relic_md_blake2s.c */,
+				AA396330264916960096D86A /* relic_md_hmac.c */,
+				AA396316264916950096D86A /* relic_md_kdf.c */,
+				AA3962962649168E0096D86A /* relic_md_mgf.c */,
+				AA39628D2649168D0096D86A /* relic_md_sha224.c */,
+				AA396338264916970096D86A /* relic_md_sha256.c */,
+				AA3962FB264916930096D86A /* relic_md_sha384.c */,
+				AA39633D264916970096D86A /* relic_md_sha512.c */,
+				AA3962BD264916900096D86A /* relic_md_xmd.c */,
+				AA3962D7264916910096D86A /* relic_mt_mpc.c */,
+				AA396306264916940096D86A /* relic_pc_core.c */,
+				AA3962FD264916940096D86A /* relic_pc_exp.c */,
+				AA3962D9264916920096D86A /* relic_pc_mpc.c */,
+				AA3962F1264916930096D86A /* relic_pc_util.c */,
+				AA3962B3264916900096D86A /* relic_pp_add_k2.c */,
+				AA39629E2649168E0096D86A /* relic_pp_add_k8.c */,
+				AA396307264916940096D86A /* relic_pp_add_k12.c */,
+				AA3962C2264916900096D86A /* relic_pp_add_k48.c */,
+				AA3962992649168E0096D86A /* relic_pp_add_k54.c */,
+				AA39628A2649168D0096D86A /* relic_pp_dbl_k2.c */,
+				AA39633A264916970096D86A /* relic_pp_dbl_k8.c */,
+				AA39629D2649168E0096D86A /* relic_pp_dbl_k12.c */,
+				AA3962DF264916920096D86A /* relic_pp_dbl_k48.c */,
+				AA3962752649168C0096D86A /* relic_pp_dbl_k54.c */,
+				AA39628E2649168D0096D86A /* relic_pp_exp_k2.c */,
+				AA3962F8264916930096D86A /* relic_pp_exp_k8.c */,
+				AA3962DA264916920096D86A /* relic_pp_exp_k12.c */,
+				AA396358264916990096D86A /* relic_pp_exp_k48.c */,
+				AA3962B6264916900096D86A /* relic_pp_exp_k54.c */,
+				AA3962B12649168F0096D86A /* relic_pp_map_k2.c */,
+				AA39634A264916980096D86A /* relic_pp_map_k8.c */,
+				AA3962F6264916930096D86A /* relic_pp_map_k12.c */,
+				AA39627F2649168C0096D86A /* relic_pp_map_k48.c */,
+				AA396333264916970096D86A /* relic_pp_map_k54.c */,
+				AA3962B7264916900096D86A /* relic_pp_map.c */,
+				AA3962A12649168F0096D86A /* relic_pp_norm.c */,
+				AA3962702649168B0096D86A /* relic_rand_core.c */,
+				AA3962FE264916940096D86A /* relic_rand_hashd.c */,
+				AA39630D264916940096D86A /* relic_util.c */,
+				AA3962DE264916920096D86A /* rijndael-alg-fst.c */,
+				AA39632A264916960096D86A /* rijndael-api-fst.c */,
+				AA3962A32649168F0096D86A /* sha224-256.c */,
+				AA3962E3264916920096D86A /* sha384-512.c */,
+			);
+			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		AA39645626491ABA0096D86A /* pbls */ = {
+			isa = PBXGroup;
+			children = (
+				AA39646726491B420096D86A /* Headers */,
+				AA39645D26491ACF0096D86A /* Source Files */,
+				AA39645E26491B190096D86A /* CMakeLists.txt */,
+			);
+			path = pbls;
+			sourceTree = "<group>";
+		};
+		AA39645D26491ACF0096D86A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA39646026491B270096D86A /* bls.cpp */,
+				AA39646126491B270096D86A /* elements.cpp */,
+				AA39645F26491B270096D86A /* privatekey.cpp */,
+				AA39646226491B270096D86A /* schemes.cpp */,
+			);
+			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		AA39646726491B420096D86A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AA39646926491B4C0096D86A /* bls.hpp */,
+				AA39646C26491B4C0096D86A /* elements.hpp */,
+				AA39646A26491B4C0096D86A /* hdkeys.hpp */,
+				AA39646B26491B4C0096D86A /* hkdf.hpp */,
+				AA39646D26491B4C0096D86A /* privatekey.hpp */,
+				AA39646E26491B4C0096D86A /* schemes.hpp */,
+				AA39646826491B4C0096D86A /* test-utils.hpp */,
+				AA39646F26491B4C0096D86A /* util.hpp */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		AA3989D32649A54E0096D86A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3989E32649A64E0096D86A /* libgmp.a */,
+				AA3989E22649A64E0096D86A /* libsodium.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,11 +1089,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				AA395D22264915AE0096D86A /* PBXTargetDependency */,
+				AA3989DD2649A5CE0096D86A /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AA39591F264914E10096D86A /* relic_s */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA395924264914E10096D86A /* Build configuration list for PBXNativeTarget "relic_s" */;
+			buildPhases = (
+				AA39591C264914E10096D86A /* Sources */,
+				AA39591D264914E10096D86A /* Frameworks */,
+				AA39591E264914E10096D86A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = relic_s;
+			productName = relic_s;
+			productReference = AA395920264914E10096D86A /* librelic_s.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA39645426491ABA0096D86A /* pbls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA39645926491ABA0096D86A /* Build configuration list for PBXNativeTarget "pbls" */;
+			buildPhases = (
+				AA39645126491ABA0096D86A /* Sources */,
+				AA39645226491ABA0096D86A /* Frameworks */,
+				AA39645326491ABA0096D86A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pbls;
+			productName = pbls;
+			productReference = AA39645526491ABA0096D86A /* libpbls.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,12 +1137,19 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					AA39591F264914E10096D86A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					AA39645426491ABA0096D86A = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -150,6 +1167,8 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				AA39591F264914E10096D86A /* relic_s */,
+				AA39645426491ABA0096D86A /* pbls */,
 			);
 		};
 /* End PBXProject section */
@@ -206,10 +1225,280 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				AA3989E72649AF8E0096D86A /* wrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39591C264914E10096D86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3963CF2649169B0096D86A /* relic_ep_mul_fix.c in Sources */,
+				AA396365264916990096D86A /* relic_fb_cmp.c in Sources */,
+				AA39640F2649169B0096D86A /* relic_fb_shift_low.c in Sources */,
+				AA396388264916990096D86A /* relic_fp_prime.c in Sources */,
+				AA396375264916990096D86A /* relic_fp_mul_low.c in Sources */,
+				AA3963BE2649169A0096D86A /* relic_fb_inv.c in Sources */,
+				AA3963D72649169B0096D86A /* relic_fb_shift.c in Sources */,
+				AA3963CC2649169A0096D86A /* relic_pp_dbl_k48.c in Sources */,
+				AA3963FF2649169B0096D86A /* relic_fp9_mul.c in Sources */,
+				AA3964402649169C0096D86A /* relic_bn_shift_low.c in Sources */,
+				AA3963F92649169B0096D86A /* relic_fp_mul.c in Sources */,
+				AA3963A12649169A0096D86A /* relic_ep2_curve.c in Sources */,
+				AA396385264916990096D86A /* relic_ep2_neg.c in Sources */,
+				AA3963E32649169B0096D86A /* relic_pp_map_k12.c in Sources */,
+				AA3963A32649169A0096D86A /* relic_pp_exp_k54.c in Sources */,
+				AA3964082649169B0096D86A /* relic_eb_hlv.c in Sources */,
+				AA3964152649169C0096D86A /* relic_fp_rdc_low.c in Sources */,
+				AA396380264916990096D86A /* relic_bc_aes.c in Sources */,
+				AA3963D22649169B0096D86A /* relic_eb_util.c in Sources */,
+				AA3963DD2649169B0096D86A /* relic_ep2_pck.c in Sources */,
+				AA396368264916990096D86A /* relic_fp_util.c in Sources */,
+				AA3964452649169C0096D86A /* relic_pp_exp_k48.c in Sources */,
+				AA3963F72649169B0096D86A /* relic_fp48_sqr.c in Sources */,
+				AA3963C42649169A0096D86A /* relic_mt_mpc.c in Sources */,
+				AA39638B2649169A0096D86A /* relic_pp_add_k8.c in Sources */,
+				AA3963D02649169B0096D86A /* sha384-512.c in Sources */,
+				AA39635F264916990096D86A /* relic_bn_mod_low.c in Sources */,
+				AA3963FC2649169B0096D86A /* relic_ep_psi.c in Sources */,
+				AA3963F22649169B0096D86A /* relic_fb2_mul.c in Sources */,
+				AA39641F2649169C0096D86A /* relic_ep_param.c in Sources */,
+				AA3964122649169B0096D86A /* relic_eb_add.c in Sources */,
+				AA3964432649169C0096D86A /* relic_ed_norm.c in Sources */,
+				AA3964372649169C0096D86A /* relic_pp_map_k8.c in Sources */,
+				AA39637E264916990096D86A /* relic_fpx_cyc.c in Sources */,
+				AA3963A22649169A0096D86A /* relic_bn_lcm.c in Sources */,
+				AA3964212649169C0096D86A /* relic_arch_x64.c in Sources */,
+				AA3963992649169A0096D86A /* relic_fpx_exp.c in Sources */,
+				AA3963A82649169A0096D86A /* relic_fb_rdc.c in Sources */,
+				AA39642D2649169C0096D86A /* relic_cp_cmlhs.c in Sources */,
+				AA39643F2649169C0096D86A /* relic_fp24_mul.c in Sources */,
+				AA3964362649169C0096D86A /* relic_bn_add.c in Sources */,
+				AA3963FE2649169B0096D86A /* relic_cp_ecdsa.c in Sources */,
+				AA3963B72649169A0096D86A /* relic_cp_bdpe.c in Sources */,
+				AA39636A264916990096D86A /* relic_fp12_sqr.c in Sources */,
+				AA396369264916990096D86A /* relic_fpx_util.c in Sources */,
+				AA3963FB2649169B0096D86A /* relic_ed_util.c in Sources */,
+				AA3963F12649169B0096D86A /* relic_ed_map.c in Sources */,
+				AA3964172649169C0096D86A /* rijndael-api-fst.c in Sources */,
+				AA3963A02649169A0096D86A /* relic_pp_add_k2.c in Sources */,
+				AA3964202649169C0096D86A /* relic_pp_map_k54.c in Sources */,
+				AA3963902649169A0096D86A /* sha224-256.c in Sources */,
+				AA39639B2649169A0096D86A /* relic_ep2_dbl.c in Sources */,
+				AA39643D2649169C0096D86A /* relic_ed_mul_fix.c in Sources */,
+				AA39642B2649169C0096D86A /* relic_eb_curve.c in Sources */,
+				AA3963D32649169B0096D86A /* relic_fpx_sqr_low.c in Sources */,
+				AA3964142649169C0096D86A /* relic_fpx_add_low.c in Sources */,
+				AA39639D2649169A0096D86A /* relic_ep2_mul_sim.c in Sources */,
+				AA3963CB2649169A0096D86A /* rijndael-alg-fst.c in Sources */,
+				AA3963E72649169B0096D86A /* relic_bn_cmp.c in Sources */,
+				AA396372264916990096D86A /* relic_fp8_sqr.c in Sources */,
+				AA396371264916990096D86A /* relic_fp4_sqr.c in Sources */,
+				AA3963A52649169A0096D86A /* relic_fb_mul.c in Sources */,
+				AA39638D2649169A0096D86A /* relic_cp_mpss.c in Sources */,
+				AA3964292649169C0096D86A /* relic_ep_pck.c in Sources */,
+				AA396384264916990096D86A /* relic_ed_add.c in Sources */,
+				AA396367264916990096D86A /* relic_core.c in Sources */,
+				AA3963DA2649169B0096D86A /* relic_cp_vbnn.c in Sources */,
+				AA3963FD2649169B0096D86A /* relic_fpx_inv.c in Sources */,
+				AA3963A62649169A0096D86A /* relic_bn_div.c in Sources */,
+				AA39642A2649169C0096D86A /* relic_md_sha512.c in Sources */,
+				AA39642C2649169C0096D86A /* relic_bn_factor.c in Sources */,
+				AA39642F2649169C0096D86A /* relic_ed_mul.c in Sources */,
+				AA3964102649169B0096D86A /* relic_bn_mod.c in Sources */,
+				AA3963DB2649169B0096D86A /* relic_ep2_frb.c in Sources */,
+				AA3963E42649169B0096D86A /* relic_fpx_pck.c in Sources */,
+				AA3963E62649169B0096D86A /* relic_fpx_add.c in Sources */,
+				AA3963AE2649169A0096D86A /* relic_err.c in Sources */,
+				AA3964012649169B0096D86A /* relic_fb_itr.c in Sources */,
+				AA396359264916990096D86A /* relic_ed_neg.c in Sources */,
+				AA396366264916990096D86A /* relic_cp_ibe.c in Sources */,
+				AA3963E52649169B0096D86A /* relic_pp_exp_k8.c in Sources */,
+				AA3963AB2649169A0096D86A /* relic_ep2_map.c in Sources */,
+				AA3963C92649169A0096D86A /* relic_cp_rabin.c in Sources */,
+				AA3963962649169A0096D86A /* relic_fp18_mul.c in Sources */,
+				AA3963DE2649169B0096D86A /* relic_pc_util.c in Sources */,
+				AA3963932649169A0096D86A /* relic_eb_neg.c in Sources */,
+				AA3963B22649169A0096D86A /* relic_fb_slv.c in Sources */,
+				AA396379264916990096D86A /* relic_eb_map.c in Sources */,
+				AA39639E2649169A0096D86A /* relic_pp_map_k2.c in Sources */,
+				AA3964192649169C0096D86A /* relic_bn_inv.c in Sources */,
+				AA3963B32649169A0096D86A /* relic_bn_mxp.c in Sources */,
+				AA39635B264916990096D86A /* relic_dv_util.c in Sources */,
+				AA3964062649169B0096D86A /* relic_cp_bls.c in Sources */,
+				AA3964042649169B0096D86A /* relic_bn_shift.c in Sources */,
+				AA3963D82649169B0096D86A /* relic_ep2_norm.c in Sources */,
+				AA3963B02649169A0096D86A /* relic_cp_ecdh.c in Sources */,
+				AA3963CE2649169A0096D86A /* relic_fb_srt.c in Sources */,
+				AA3963CD2649169A0096D86A /* relic_conf.c in Sources */,
+				AA396362264916990096D86A /* relic_pp_dbl_k54.c in Sources */,
+				AA39637A264916990096D86A /* relic_md_sha224.c in Sources */,
+				AA3963BD2649169A0096D86A /* relic_fp_add_low.c in Sources */,
+				AA3963B92649169A0096D86A /* relic_fpx_rdc_low.c in Sources */,
+				AA3964052649169B0096D86A /* relic_cp_cls.c in Sources */,
+				AA3963E92649169B0096D86A /* relic_bn_mul_low.c in Sources */,
+				AA3964132649169C0096D86A /* relic_bn_gcd.c in Sources */,
+				AA3963E02649169B0096D86A /* relic_bn_srt.c in Sources */,
+				AA396389264916990096D86A /* relic_bn_mul.c in Sources */,
+				AA39636E264916990096D86A /* relic_bn_smb.c in Sources */,
+				AA3963D92649169B0096D86A /* relic_ep2_cmp.c in Sources */,
+				AA3963F52649169B0096D86A /* relic_cp_bbs.c in Sources */,
+				AA3963B82649169A0096D86A /* blake2s-ref.c in Sources */,
+				AA39640D2649169B0096D86A /* relic_fp2_sqr.c in Sources */,
+				AA396361264916990096D86A /* relic_eb_param.c in Sources */,
+				AA3963A72649169A0096D86A /* relic_eb_cmp.c in Sources */,
+				AA3963952649169A0096D86A /* relic_dv_mem.c in Sources */,
+				AA39635A264916990096D86A /* relic_ep_mul.c in Sources */,
+				AA3963BC2649169A0096D86A /* relic_fb_slv_low.c in Sources */,
+				AA396374264916990096D86A /* relic_fb_sqr_low.c in Sources */,
+				AA3963982649169A0096D86A /* relic_cp_zss.c in Sources */,
+				AA39641A2649169C0096D86A /* relic_eb_mul.c in Sources */,
+				AA396370264916990096D86A /* relic_eb_dbl.c in Sources */,
+				AA3963EB2649169B0096D86A /* relic_rand_hashd.c in Sources */,
+				AA3963E12649169B0096D86A /* relic_fp_shift.c in Sources */,
+				AA3963B52649169A0096D86A /* relic_fp_srt.c in Sources */,
+				AA39640A2649169B0096D86A /* relic_cp_mklhs.c in Sources */,
+				AA3963AC2649169A0096D86A /* relic_cp_ecies.c in Sources */,
+				AA39641E2649169C0096D86A /* relic_fp_cmp.c in Sources */,
+				AA3963F42649169B0096D86A /* relic_pp_add_k12.c in Sources */,
+				AA39635C264916990096D86A /* relic_bn_prime.c in Sources */,
+				AA3964392649169C0096D86A /* relic_ep_mul_sim.c in Sources */,
+				AA3964342649169C0096D86A /* relic_fp48_mul.c in Sources */,
+				AA39639C2649169A0096D86A /* relic_eb_norm.c in Sources */,
+				AA3963E22649169B0096D86A /* relic_fp_shift_low.c in Sources */,
+				AA3963F02649169B0096D86A /* relic_ep_map.c in Sources */,
+				AA396387264916990096D86A /* relic_fb2_inv.c in Sources */,
+				AA3963BF2649169A0096D86A /* relic_ep_cmp.c in Sources */,
+				AA3963CA2649169A0096D86A /* relic_fpx_rdc.c in Sources */,
+				AA3964422649169C0096D86A /* relic_ed_cmp.c in Sources */,
+				AA3963EE2649169B0096D86A /* relic_ep_norm.c in Sources */,
+				AA3963C12649169A0096D86A /* relic_bn_sqr_low.c in Sources */,
+				AA3963BA2649169A0096D86A /* relic_bn_div_low.c in Sources */,
+				AA396381264916990096D86A /* relic_fb2_slv.c in Sources */,
+				AA39644E264918B70096D86A /* lzcnt.inc in Sources */,
+				AA3963942649169A0096D86A /* relic_fb_trc.c in Sources */,
+				AA39641B2649169C0096D86A /* relic_fp4_mul.c in Sources */,
+				AA39640C2649169B0096D86A /* relic_fb_exp.c in Sources */,
+				AA3964002649169B0096D86A /* relic_eb_mul_fix.c in Sources */,
+				AA3964252649169C0096D86A /* relic_md_sha256.c in Sources */,
+				AA3964092649169B0096D86A /* relic_fb_add_low.c in Sources */,
+				AA3964322649169C0096D86A /* relic_fb_sqr.c in Sources */,
+				AA3963AA2649169A0096D86A /* relic_md_xmd.c in Sources */,
+				AA396386264916990096D86A /* relic_pp_add_k54.c in Sources */,
+				AA39635D264916990096D86A /* relic_rand_core.c in Sources */,
+				AA39643E2649169C0096D86A /* relic_fp2_mul.c in Sources */,
+				AA3963EA2649169B0096D86A /* relic_pc_exp.c in Sources */,
+				AA396360264916990096D86A /* relic_cp_bgn.c in Sources */,
+				AA396378264916990096D86A /* relic_fp_param.c in Sources */,
+				AA3963F62649169B0096D86A /* relic_ep2_mul_fix.c in Sources */,
+				AA39638F2649169A0096D86A /* relic_fp8_mul.c in Sources */,
+				AA396373264916990096D86A /* relic_fb_poly.c in Sources */,
+				AA39636D264916990096D86A /* relic_eb_pck.c in Sources */,
+				AA3963C32649169A0096D86A /* relic_fpx_frb.c in Sources */,
+				AA3964272649169C0096D86A /* relic_pp_dbl_k8.c in Sources */,
+				AA3963EF2649169B0096D86A /* relic_bn_add_low.c in Sources */,
+				AA3963DC2649169B0096D86A /* relic_fb_util.c in Sources */,
+				AA3964222649169C0096D86A /* relic_ep2_mul.c in Sources */,
+				AA39639F2649169A0096D86A /* relic_fp12_mul.c in Sources */,
+				AA3963C62649169A0096D86A /* relic_pc_mpc.c in Sources */,
+				AA3963A42649169A0096D86A /* relic_pp_map.c in Sources */,
+				AA3963D62649169B0096D86A /* relic_ep2_mul_cof.c in Sources */,
+				AA3964022649169B0096D86A /* relic_fb_inv_low.c in Sources */,
+				AA3963C22649169A0096D86A /* relic_fp24_sqr.c in Sources */,
+				AA3963922649169A0096D86A /* relic_cp_rsa.c in Sources */,
+				AA3963FA2649169B0096D86A /* relic_util.c in Sources */,
+				AA3963C82649169A0096D86A /* relic_fpx_field.c in Sources */,
+				AA39639A2649169A0096D86A /* relic_bn_sqr.c in Sources */,
+				AA3963DF2649169B0096D86A /* relic_bn_mem.c in Sources */,
+				AA3964382649169C0096D86A /* relic_ep_curve.c in Sources */,
+				AA39640E2649169B0096D86A /* relic_fp_add.c in Sources */,
+				AA3964282649169C0096D86A /* relic_fp6_sqr.c in Sources */,
+				AA3963AF2649169A0096D86A /* relic_pp_add_k48.c in Sources */,
+				AA3964242649169C0096D86A /* relic_cp_ecss.c in Sources */,
+				AA39643C2649169C0096D86A /* relic_fpx_mul_low.c in Sources */,
+				AA3963B62649169A0096D86A /* relic_fp3_mul.c in Sources */,
+				AA39636F264916990096D86A /* relic_fb_trc_low.c in Sources */,
+				AA39635E264916990096D86A /* relic_ep2_util.c in Sources */,
+				AA3963B42649169A0096D86A /* relic_fp_exp.c in Sources */,
+				AA3963C72649169A0096D86A /* relic_pp_exp_k12.c in Sources */,
+				AA3963D12649169B0096D86A /* relic_ep_util.c in Sources */,
+				AA3964262649169C0096D86A /* relic_fp_inv_low.c in Sources */,
+				AA3963D42649169B0096D86A /* relic_fpx_srt.c in Sources */,
+				AA3964182649169C0096D86A /* relic_cp_ecmqv.c in Sources */,
+				AA396382264916990096D86A /* relic_eb_frb.c in Sources */,
+				AA39636C264916990096D86A /* relic_pp_map_k48.c in Sources */,
+				AA3963BB2649169A0096D86A /* relic_cp_ghpe.c in Sources */,
+				AA39636B264916990096D86A /* relic_fb_itr_low.c in Sources */,
+				AA3964412649169C0096D86A /* relic_ep2_add.c in Sources */,
+				AA3963F32649169B0096D86A /* relic_pc_core.c in Sources */,
+				AA3963E82649169B0096D86A /* relic_md_sha384.c in Sources */,
+				AA3963912649169A0096D86A /* relic_bn_util.c in Sources */,
+				AA39637B264916990096D86A /* relic_pp_exp_k2.c in Sources */,
+				AA39637C264916990096D86A /* relic_fpx_cmp.c in Sources */,
+				AA3964312649169C0096D86A /* relic_fp_sqr.c in Sources */,
+				AA3964332649169C0096D86A /* relic_fp6_mul.c in Sources */,
+				AA39642E2649169C0096D86A /* relic_fb_param.c in Sources */,
+				AA3964302649169C0096D86A /* relic_ep_dbl.c in Sources */,
+				AA3964352649169C0096D86A /* relic_cp_sokaka.c in Sources */,
+				AA3964072649169B0096D86A /* relic_ed_mul_sim.c in Sources */,
+				AA3963D52649169B0096D86A /* relic_fb2_sqr.c in Sources */,
+				AA3964232649169C0096D86A /* relic_fp54_mul.c in Sources */,
+				AA3964112649169B0096D86A /* relic_fb_add.c in Sources */,
+				AA396364264916990096D86A /* relic_fb_srt_low.c in Sources */,
+				AA3964162649169C0096D86A /* relic_ep_neg.c in Sources */,
+				AA3963A92649169A0096D86A /* relic_cp_pss.c in Sources */,
+				AA39641D2649169C0096D86A /* relic_md_hmac.c in Sources */,
+				AA3963F82649169B0096D86A /* relic_fp_inv.c in Sources */,
+				AA39638E2649169A0096D86A /* relic_pp_norm.c in Sources */,
+				AA39638C2649169A0096D86A /* relic_ed_param.c in Sources */,
+				AA39641C2649169C0096D86A /* relic_fp18_sqr.c in Sources */,
+				AA3963C02649169A0096D86A /* relic_cp_phpe.c in Sources */,
+				AA39638A264916990096D86A /* relic_pp_dbl_k12.c in Sources */,
+				AA3964442649169C0096D86A /* relic_ed_pck.c in Sources */,
+				AA396383264916990096D86A /* relic_md_mgf.c in Sources */,
+				AA3963972649169A0096D86A /* relic_eb_mul_sim.c in Sources */,
+				AA39637F264916990096D86A /* relic_fp3_sqr.c in Sources */,
+				AA39643B2649169C0096D86A /* relic_ed_curve.c in Sources */,
+				AA396376264916990096D86A /* relic_fp9_sqr.c in Sources */,
+				AA3963EC2649169B0096D86A /* relic_fp_sqr_low.c in Sources */,
+				AA396377264916990096D86A /* relic_pp_dbl_k2.c in Sources */,
+				AA39640B2649169B0096D86A /* relic_ed_dbl.c in Sources */,
+				AA3963B12649169A0096D86A /* relic_fb_rdc_low.c in Sources */,
+				AA3963ED2649169B0096D86A /* relic_md_blake2s.c in Sources */,
+				AA39643A2649169C0096D86A /* relic_bn_rec.c in Sources */,
+				AA3963C52649169A0096D86A /* relic_ep_add.c in Sources */,
+				AA3963AD2649169A0096D86A /* relic_fp54_sqr.c in Sources */,
+				AA39637D264916990096D86A /* relic_fb_mul_low.c in Sources */,
+				AA396363264916990096D86A /* relic_fp_rdc.c in Sources */,
+				AA3964032649169B0096D86A /* relic_md_kdf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39645126491ABA0096D86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA39646626491B270096D86A /* schemes.cpp in Sources */,
+				AA39646526491B270096D86A /* elements.cpp in Sources */,
+				AA39646326491B270096D86A /* privatekey.cpp in Sources */,
+				AA39646426491B270096D86A /* bls.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA395D22264915AE0096D86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA39591F264914E10096D86A /* relic_s */;
+			targetProxy = AA395D21264915AE0096D86A /* PBXContainerItemProxy */;
+		};
+		AA3989DD2649A5CE0096D86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA39645426491ABA0096D86A /* pbls */;
+			targetProxy = AA3989DC2649A5CE0096D86A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -290,7 +1579,16 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -399,7 +1697,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -414,7 +1713,16 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -433,7 +1741,16 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -441,6 +1758,144 @@
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
+		};
+		AA395925264914E10096D86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA395926264914E10096D86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA395927264914E10096D86A /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
+		AA39645A26491ABA0096D86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA39645B26491ABA0096D86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA39645C26491ABA0096D86A /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
 		};
 /* End XCBuildConfiguration section */
 
@@ -461,6 +1916,26 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA395924264914E10096D86A /* Build configuration list for PBXNativeTarget "relic_s" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA395925264914E10096D86A /* Debug */,
+				AA395926264914E10096D86A /* Release */,
+				AA395927264914E10096D86A /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA39645926491ABA0096D86A /* Build configuration list for PBXNativeTarget "pbls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA39645A26491ABA0096D86A /* Debug */,
+				AA39645B26491ABA0096D86A /* Release */,
+				AA39645C26491ABA0096D86A /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
